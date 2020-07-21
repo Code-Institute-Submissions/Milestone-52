@@ -1,0 +1,30 @@
+.background {
+    background:url("../images/downhill.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-container{
+    height:100vh;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.header-container h1, h2{
+    font-family: 'Black Han Sans', sans-serif;
+    text-align:left;
+    
+}
+
+.header-container h1{
+    font-size:7rem;
+    color:rgb(229, 233, 3);
+}
+
+.header-container h2{
+    color:rgb(43, 83, 196);
+    font-size:25px;
+}
