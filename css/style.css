@@ -1,11 +1,11 @@
 .background {
-    background:url("../images/downhill.jpg") no-repeat center center fixed;
+    background:url("../images/downhill.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
+/*---------- Header ----------*/
 .header-container{
     height:100vh;
     display:flex;
@@ -15,16 +15,39 @@
 
 .header-container h1, h2{
     font-family: 'Black Han Sans', sans-serif;
-    text-align:left;
-    
 }
 
 .header-container h1{
     font-size:7rem;
     color:rgb(229, 233, 3);
+    text-align:left;
+    margin:0;
 }
 
 .header-container h2{
     color:rgb(43, 83, 196);
-    font-size:25px;
+    font-size:31px;
+    text-align:right; 
+    margin:0;
+}
+
+/*---------- Season Passes ----------*/
+.passes-container{
+    display:flex;
+    width:100vw;
+    height:350px;
+}
+
+.pass-header{
+    font-family: 'Black Han Sans', sans-serif;
+    color:rgb(43, 83, 196);
+    font-size:31px;
+    text-align:center;
+    margin:0;
+}
+
+.rounded{
+    width:200px;
+    height:5px;
+    background-color:rgb(229, 233, 3);
 }
