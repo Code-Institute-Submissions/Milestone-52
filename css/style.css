@@ -46,14 +46,15 @@
 }
 
 .list-groups{
-    margin-top:20px;
+    margin-top:10px;
 }
 
 .list-group{
     border: 3px solid rgb(229, 233, 3);
     border-radius:25px;
     margin-bottom:20px;
-    height:475px;
+    overflow:hidden;
+    
 }
 
 .list-group h4{
@@ -74,4 +75,45 @@
 .list-group-price{
     font-size:50px;
     font-weight:bold;
+}
+
+.btn-lg{
+    background-color:white;
+    color:rgb(43, 83, 196);
+    width:300px;
+    font-family: 'Oswald', sans-serif;
+    font-size:25px;
+    border:3px solid rgb(229, 233, 3);
+}
+
+.btn-lg:hover{
+    color:rgb(229, 233, 3);
+    background-color:rgb(43, 83, 196);
+}
+
+/*---------- Mt.Collective for media query ----------*/
+.lg-view{
+    display:inline-block;
+}
+
+.sm-view{
+    display:none;
+}
+
+/*---------- Media Queries ----------*/
+
+@media (min-width: 991px) {
+    .list-group{
+        height:475px;
+    }
+}
+
+@media (max-width: 1065px) {
+    .lg-view{
+       display:none;
+    }
+
+    .sm-view{
+       display:inline-block;
+    }
 }
