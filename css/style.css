@@ -5,6 +5,8 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
+
 /*---------- Header ----------*/
 .header-container{
     height:100vh;
@@ -24,10 +26,31 @@
     color:rgb(43, 83, 196);
     font-size:31px; 
 }
+/*---------- Callout ----------*/
+.callout-container{
+    background-color:rgb(229, 233, 3);
+    height:400px;
+}
 
+.callout-icon{
+    font-size:200px;
+    color:rgb(43, 83, 196);
+}
+
+a:not([href]) {
+    color:rgb(43, 83, 196);
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.callout-tag{
+    font-family: 'Black Han Sans', sans-serif;
+    color:rgb(43, 83, 196);
+}
 /*---------- Season Passes ----------*/
 .passes-container{
-    height:100%;
     background-color:rgb(43, 83, 196);
 }
 
@@ -49,22 +72,21 @@
     margin-top:10px;
 }
 
-.list-group{
+.pass-details{
     border: 3px solid rgb(229, 233, 3);
     border-radius:25px;
-    margin-bottom:20px;
+    margin-bottom:10px;
     overflow:hidden;
-    
+    padding-bottom:10px;   
 }
 
 .list-group h4{
     font-size:30px;
     font-weight:bold;
     border-bottom:2px solid rgb(229, 233, 3);
-    padding-bottom:5px;
 }
 
-.list-group-item{
+.pass-description{
     background-color:rgb(43, 83, 196);
     border-bottom:none;
     color:white;
@@ -73,7 +95,7 @@
 }
 
 .list-group-price{
-    font-size:50px;
+    font-size:30px;
     font-weight:bold;
 }
 
@@ -91,6 +113,33 @@
     background-color:rgb(43, 83, 196);
 }
 
+/*---------- Footer ----------*/
+
+.footer-element{
+    background-color:rgb(43, 83, 196);
+    border-bottom:none;
+    color:white;
+}
+
+.social-icon{
+    border:none;
+}
+
+.social-icon i{
+    font-size: 40px;
+    color:white;
+    margin-top:10px;
+}
+
+.social-icon i:hover{
+    color:rgb(229, 233, 3);
+}
+
+.social-tag{
+    border:none;
+    font-size:40px;
+    font-family: 'Oswald', sans-serif;
+}
 /*---------- Mt.Collective for media query ----------*/
 .lg-view{
     display:inline-block;
@@ -103,7 +152,7 @@
 /*---------- Media Queries ----------*/
 
 @media (min-width: 991px) {
-    .list-group{
+    .pass-details{
         height:475px;
     }
 }

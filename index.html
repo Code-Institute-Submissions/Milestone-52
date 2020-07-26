@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     
@@ -12,15 +12,33 @@
 
 </head>
 <body>
+    <!-- Navbar -->
+    
     <!-- Header -->
-    <section class="background">
+    <section class="background container-fluid">
         <div class="container d-flex flex-column header-container justify-content-center align-items-start">
             <h1>Ski</h1>
             <h1>Village</h1>
             <h2>Season Pass Comparison</h2>
         </div>
     </section>
-
+     <!-- Callout -->
+     <section class="container-fluid callout-container">
+        <div class="d-flex justify-content-around">
+            <a class="callout-icon noHover">
+                <i class="fas fa-ticket-alt" aria-hidden="true"></i>
+            </a>
+            <a class="callout-icon noHover">
+                <i class="fas fa-skiing" aria-hidden="true"></i>
+            </a>
+            <a class="callout-icon noHover">
+                <i class="fas fa-globe" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="callout-tag d-flex justify-content-center">
+            <h1>Pick a pass. Ski the globe.</h1>
+        </div>
+     </section>
     <!-- Season Passes -->
     <section>
         <div class="container-fluid passes-container">
@@ -34,37 +52,64 @@
             </div>
             <div class="row list-groups">
                 <div class="col-lg-4 col-sm-12">
-                    <ul class="list-group">
-                        <li class="list-group-item text-center epic"><h4>Epic Pass</h4></li>
-                        <li class="list-group-item">Unrestricted access to 34 resorts</li>
-                        <li class="list-group-item">Restricted access to 9 additional North American and 15 international resorts</li>
-                        <li class="list-group-item">No blackout dates</li>
-                        <li class="list-group-item text-center list-group-price">$979</li>
+                    <ul class="list-group pass-details">
+                        <li class="list-group-item pass-description text-center epic"><h4>Epic Pass</h4></li>
+                        <li class="list-group-item pass-description">Unrestricted access to 34 North American resorts</li>
+                        <li class="list-group-item pass-description">Access to 24 additional international and North American resorts </li>
+                        <li class="list-group-item pass-description">No blackout dates</li>
+                        <li class="list-group-item pass-description text-center list-group-price">$979</li>
                         <button type="button" class="btn btn-lg mx-auto" data-toggle="modal" data-target="#myModal">Show on map</button>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <ul class="list-group">
-                        <li class="list-group-item text-center lg-view"><h4>Mountain Collective</h4></li>
-                        <li class="list-group-item text-center sm-view"><h4>Mt. Collective</h4></li>
-                        <li class="list-group-item">Restricted access of 2 days to each 17 North American resorts</li>
-                        <li class="list-group-item">Access to additional 6 international resorts</li>
-                        <li class="list-group-item">No blackout dates</li>
-                        <li class="list-group-item text-center list-group-price">$469</li>
+                    <ul class="list-group pass-details">
+                        <li class="list-group-item pass-description text-center lg-view"><h4>Mountain Collective</h4></li>
+                        <li class="list-group-item pass-description text-center sm-view"><h4>Mt. Collective</h4></li>
+                        <li class="list-group-item pass-description">Restricted access to 17 North American resorts</li>
+                        <li class="list-group-item pass-description">Access to 6 additional international resorts leading to 46 days total</li>
+                        <li class="list-group-item pass-description">No blackout dates</li>
+                        <li class="list-group-item pass-description text-center list-group-price">$469</li>
                         <button type="button" class="btn btn-lg mx-auto" data-toggle="modal" data-target="#myModal">Show on map</button>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <ul class="list-group">
-                        <li class="list-group-item text-center ikon"><h4>Ikon Pass</h4></li>
-                        <li class="list-group-item">Unrestricted access to 15 resorts</li>
-                        <li class="list-group-item">Restricted access to 27 additional North American and International resorts</li>
-                        <li class="list-group-item">No blackout dates</li>
-                        <li class="list-group-item text-center list-group-price">$1049</li>
+                    <ul class="list-group pass-details">
+                        <li class="list-group-item pass-description text-center ikon"><h4>Ikon Pass</h4></li>
+                        <li class="list-group-item pass-description">Unrestricted access to 15 North American resorts</li>
+                        <li class="list-group-item pass-description">Access to 27 additional international and North American resorts</li>
+                        <li class="list-group-item pass-description">No blackout dates</li>
+                        <li class="list-group-item pass-description text-center list-group-price">$1049</li>
                         <button type="button" class="btn btn-lg mx-auto" data-toggle="modal" data-target="#myModal">Show on map</button>
                     </ul>
                 </div>
             </div>           
+        </div>
+        <div class="container-fluid footer-element">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group list-group-horizontal d-flex flex-row">
+                        <li class="list-group-item footer-element social-tag"><p>Follow us on social media for flash sales and discounts</p></li>
+                        <li class="list-group-item footer-element social-icon ml-auto">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                         </li>
+                         <li class="list-group-item footer-element social-icon justify-content-end">
+                            <a target="_blank" href="https://www.twitter.com/">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item footer-element social-icon justify-content-end">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </body>
