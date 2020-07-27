@@ -8,6 +8,7 @@
 
 
 /*---------- Header ----------*/
+
 .header-container{
     height:100vh;
 }
@@ -17,39 +18,18 @@
 }
 
 .header-container h1{
-    font-size:7rem;
+    font-size:10vw;
     color:rgb(229, 233, 3);
     margin:0;
 }
 
 .header-container h2{
     color:rgb(43, 83, 196);
-    font-size:31px; 
-}
-/*---------- Callout ----------*/
-.callout-container{
-    background-color:rgb(229, 233, 3);
-    height:400px;
+    font-size:3.5vw; 
 }
 
-.callout-icon{
-    font-size:200px;
-    color:rgb(43, 83, 196);
-}
-
-a:not([href]) {
-    color:rgb(43, 83, 196);
-}
-
-.noHover{
-    pointer-events: none;
-}
-
-.callout-tag{
-    font-family: 'Black Han Sans', sans-serif;
-    color:rgb(43, 83, 196);
-}
 /*---------- Season Passes ----------*/
+
 .passes-container{
     background-color:rgb(43, 83, 196);
 }
@@ -113,6 +93,31 @@ a:not([href]) {
     background-color:rgb(43, 83, 196);
 }
 
+/*---------- Callout ----------*/
+
+.callout-container{
+    background-color:rgb(229, 233, 3);
+    height:400px;
+}
+
+.callout-icon{
+    font-size:200px;
+    color:rgb(43, 83, 196);
+}
+
+a:not([href]) {
+    color:rgb(43, 83, 196);
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.callout-tag{
+    font-family: 'Black Han Sans', sans-serif;
+    color:rgb(43, 83, 196);
+}
+
 /*---------- Footer ----------*/
 
 .footer-element{
@@ -129,6 +134,7 @@ a:not([href]) {
     font-size: 40px;
     color:white;
     margin-top:10px;
+    margin-right:20px;
 }
 
 .social-icon i:hover{
@@ -141,6 +147,7 @@ a:not([href]) {
     font-family: 'Oswald', sans-serif;
 }
 /*---------- Mt.Collective for media query ----------*/
+
 .lg-view{
     display:inline-block;
 }
@@ -154,6 +161,23 @@ a:not([href]) {
 @media (min-width: 991px) {
     .pass-details{
         height:475px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .callout-container{
+        display:none;
+    }
+}
+
+@media (max-width: 992px) {
+    .social-tag{
+        display:none;
+    }
+
+    .social-icon{
+        margin-bottom:30px;
     }
 }
 
