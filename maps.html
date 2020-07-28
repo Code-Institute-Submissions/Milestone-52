@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Map Comparison</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+function initMap(){
+    var options = {
+        zoom:5,
+        center:{lat:39.8097,lng:-98.5556}
+    }
+    var map = new google.maps.Map(document.getElementById("map"), options);
+}
+</script>
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
+</script>
+
+</body>
+</html>
