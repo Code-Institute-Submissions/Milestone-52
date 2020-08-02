@@ -12,17 +12,52 @@
 
 </head>
 <body>
-    <!-- Navbar -->
-    
-    <!-- Header -->
-    <section class="background container-fluid">
-        <div class="d-flex flex-column header-container justify-content-lg-center justify-content-md-start justify-content-sm-start align-items-start pt-4">
-            <h1>Ski</h1>
-            <h1>Village</h1>
-            <h2>Season Pass Comparison</h2>
+         
+  <!-- Header -->
+    <div class="container background">
+        <div class="header-container p-2">
+            <div class="row">
+                <div class="col-auto mr-auto">
+                    <h1 class="pt-3">Ski<br>Village</h1>
+                </div>
+  <!-- Side Navigation -->              
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="maps.html">Map Comparison</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                    <div class="d-flex flex-row justify-content-center align-items-end">
+                        <div class="footer-element sideNav-social">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="footer-element sideNav-social">
+                            <a target="_blank" href="https://www.twitter.com/">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="footer-element sideNav-social">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+
+                    <span onclick="openNav()"><i class="fas fa-bars menu-icon p-3" aria-hidden="true"></i></span>
+            </div>
+            <div class="row">
+                <div class="col-12">    
+                    <h2>Season Pass Comparison</h2>
+                </div>
+            </div>    
         </div>
-    </section>
-     
+    </div> 
     <!-- Season Passes -->
     <section>
         <div class="container-fluid passes-container">
@@ -113,5 +148,16 @@
             </div>  
         </div>
     </section>
+
+    <script>
+    /* sideNav Width */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "450px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>  
 </body>
 </html>

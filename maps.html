@@ -9,27 +9,33 @@
     <title>Map Comparison</title>
 </head>
 <body>
-    <div class="container">
+<nav class="map-header container-fluid">
+    
+
+</nav>
+    <section class="page-background"> 
+    <div class="container-fluid map-background">
         <div class="row">
             <div class="col-12">
-                <div id="map">
+                <div class="map-container">
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
     
 <script>
 function initMap(){
     var options = {
-        zoom:5,
-        center:{lat:39.8097,lng:-98.5556}
+        zoom:4,
+        center:{lat:39.8097,lng:-98.5556},
+        gestureHandling: 'cooperative'
     }
     var map = new google.maps.Map(document.getElementById("map"), options);
 }
 </script>
-<script defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap"></script>
 
 </body>
 </html>

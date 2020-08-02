@@ -1,17 +1,80 @@
+body, html{
+    height:100%;
+}
+
 .background {
-    background:url("../images/downhill.jpg") no-repeat center center;
+    background-image:url("../images/ski2.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-
-/*---------- Header ----------*/
-
-.header-container{
     height:100vh;
+    max-width:100vw;
+    border-bottom:10px solid rgb(43, 83, 196);
 }
+
+/*---------- NavBar ----------*/
+.menu-icon{
+    font-size:3vw;
+    color:rgb(229, 233, 3);
+}
+
+.menu-icon:hover{
+    color:rgb(43, 83, 196);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0; 
+  right: 0;
+  background-color:rgb(43, 83, 196);
+  overflow-x: hidden;
+  padding-top:90px;
+  transition: 0.5s;
+  font-family: 'Oswald', sans-serif; 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 150px;
+  margin-right: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.sideNav-social{
+    font-size: 100px;
+    color:white;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+.sideNav-social i:hover{
+    color:white;
+} 
+/*---------- Header ----------*/
 
 .header-container h1, h2{
     font-family: 'Black Han Sans', sans-serif;
@@ -20,25 +83,25 @@
 .header-container h1{
     font-size:10vw;
     color:rgb(229, 233, 3);
-    margin:0;
 }
 
 .header-container h2{
     color:rgb(43, 83, 196);
-    font-size:3.5vw; 
+    font-size:3vw; 
 }
 
 /*---------- Season Passes ----------*/
 
 .passes-container{
     background-color:rgb(43, 83, 196);
+    position:relative;
 }
 
 .passes-container h2{
     font-family: 'Oswald', sans-serif;
     color:white;
-    font-size:40px;
-    margin-top:10px;
+    font-size:50px;
+    margin-bottom:15px;
 }
 
 .rounded{
@@ -89,7 +152,7 @@
 }
 
 .btn-lg:hover{
-    color:rgb(229, 233, 3);
+    color:white;
     background-color:rgb(43, 83, 196);
 }
 
@@ -98,11 +161,11 @@
 .callout-container{
     background-color:rgb(229, 233, 3);
     height:400px;
+    position:relative;
 }
 
 .callout-icon{
     font-size:200px;
-    color:rgb(43, 83, 196);
 }
 
 a:not([href]) {
@@ -139,8 +202,7 @@ a:not([href]) {
 
 .social-icon i:hover{
     color:rgb(229, 233, 3);
-}
-
+} 
 .social-tag{
     border:none;
     font-size:40px;
@@ -158,11 +220,19 @@ a:not([href]) {
 
 /*---------- Maps ----------*/
 
-#map{
-    width:100%;
-    height:600px;
+.page-background{
+    background-color:rgb(43, 83, 196);
+    height:100vh;
 }
-/*
+.map-background{
+    margin-top:70px;
+    border:3px solid rgb(229, 233, 3);
+    background-color:white;
+    width:90%;
+    height:600px;
+    padding:20px;
+}
+
 .map-container{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -172,13 +242,27 @@ a:not([href]) {
 #map{
     left:0;
     top:0;
-    height:100%;
-    width:100%;
+    height:80%;
+    width:80%;
     position:absolute;
 }
-*/
+
 /*---------- Media Queries ----------*/
 
+
+@media (max-width: 900px) {
+     .header-container h1{
+    font-size:15vw;
+    }
+
+    .header-container h2{
+    font-size:4vw;
+    }
+
+    .menu-icon{
+    font-size:6vw;
+    }
+}
 @media (min-width: 991px) {
     .pass-details{
         height:475px;
@@ -186,7 +270,6 @@ a:not([href]) {
 }
 
 @media (max-width: 991px) {
-
     .callout-container{
         display:none;
     }
@@ -210,4 +293,25 @@ a:not([href]) {
     .sm-view{
        display:inline-block;
     }
+
 }
+
+@media (max-width: 414px) {
+     .header-container h1{
+    font-size:17vw;
+    }
+
+    .header-container h2{
+    font-size:5vw;
+    }
+
+    .menu-icon{
+    font-size:8vw;
+    }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
