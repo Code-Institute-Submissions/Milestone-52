@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     
     <title>Ski Village| Season Pass Comparison Site</title>
@@ -13,19 +14,18 @@
 </head>
 <body>
          
-  <!-- Header -->
+<!-- Header -->
     <div class="container background">
         <div class="header-container p-2">
             <div class="row">
                 <div class="col-auto mr-auto">
                     <h1 class="pt-3">Ski<br>Village</h1>
                 </div>
-  <!-- Side Navigation -->              
+<!-- Side Navigation -->              
                 <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="index.html">Home</a>
                     <a href="maps.html">Map Comparison</a>
-                    <a href="#">Clients</a>
+                    <a href="#">Price Comparison</a>
                     <a href="#">Contact</a>
                     <div class="d-flex flex-row justify-content-center align-items-end">
                         <div class="footer-element sideNav-social">
@@ -48,9 +48,10 @@
                         </div>
                     </div>  
                 </div>
-
-                    <span onclick="openNav()"><i class="fas fa-bars menu-icon p-3" aria-hidden="true"></i></span>
+<!-- Hamburger Menu Icon -->
+                    <a><i class="fas fa-bars menu-icon p-3" aria-hidden="true"></i></a>
             </div>
+<!-- Header H2 -->            
             <div class="row">
                 <div class="col-12">    
                     <h2>Season Pass Comparison</h2>
@@ -58,7 +59,7 @@
             </div>    
         </div>
     </div> 
-    <!-- Season Passes -->
+<!-- Season Passes -->
     <section>
         <div class="container-fluid passes-container">
             <div class="row">
@@ -104,7 +105,7 @@
             </div>           
         </div>
     </section>
-    <!-- Callout -->
+<!-- Callout -->
     <section class="container-fluid callout-container">
         <div class="d-flex justify-content-around">
             <a class="callout-icon noHover">
@@ -121,8 +122,7 @@
             <h1>Pick a pass. Ski the globe.</h1>
         </div>
     </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <section>
         <div class="container-fluid footer-element">
             <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
@@ -148,16 +148,17 @@
             </div>  
         </div>
     </section>
-
+    
+<!-- SideNav Script -->
     <script>
-    /* sideNav Width */
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "450px";
-        }
-
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        } 
+     $(document).ready(function(){
+  $(".menu-icon").mouseenter(function(){
+    $("#mySidenav").css("width", "450px");
+  });
+  $("#mySidenav").mouseleave(function(){
+    $("#mySidenav").css("width", "0");
+  });
+});
     </script>  
 </body>
 </html>
