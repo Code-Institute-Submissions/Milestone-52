@@ -20,6 +20,7 @@ body, html{
     font-size:4vw;
     color:rgb(229, 233, 3);
     font-weight:bold;
+    top: 0;
 }
 
 .sidenav {
@@ -31,7 +32,7 @@ body, html{
   background-color:rgb(43, 83, 196);
   overflow-x: hidden;
   padding-top:90px;
-  transition: 0.5s;
+  transition:0.5s;
   font-family: 'Oswald', sans-serif; 
 }
 
@@ -41,7 +42,7 @@ body, html{
   font-size: 50px;
   color: white;
   display: block;
-  transition: 0.3s;
+  white-space:nowrap;
 }
 
 .sidenav a:hover {
@@ -58,11 +59,16 @@ body, html{
     color:white;
     margin-top:10px;
     margin-right:20px;
+    border:none;
 }
 
 .sideNav-social i:hover{
-    color:white;
+    color:#818181;
 } 
+
+.nav-social{
+    white-space:nowrap;
+}
 /*---------- Header ----------*/
 
 .header-container h1, h2{
@@ -104,7 +110,7 @@ body, html{
     margin-top:10px;
 }
 
-.pass-details{
+.list-details{
     border: 3px solid rgb(229, 233, 3);
     border-radius:25px;
     margin-bottom:10px;
@@ -149,7 +155,7 @@ body, html{
 
 .callout-container{
     background-color:rgb(229, 233, 3);
-    height:400px;
+    height:380px;
     position:relative;
 }
 
@@ -235,8 +241,18 @@ a:not([href]) {
     height:70vh;
     width:67vw;
     margin:0 auto;
-    
+}
 
+.region-container{
+    background-color:rgb(43, 83, 196);
+}
+
+.region-container h2{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size:50px;
+    margin-bottom:15px;
+}
 /*---------- Media Queries ----------*/
 
 
