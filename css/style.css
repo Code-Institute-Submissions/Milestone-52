@@ -49,6 +49,10 @@ body, html{
   color: #818181;
 }
 
+.sidenav a i{
+    font-size:75px;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
@@ -143,12 +147,11 @@ body, html{
     width:300px;
     font-family: 'Oswald', sans-serif;
     font-size:25px;
-    border:3px solid rgb(229, 233, 3);
 }
 
 .btn-lg:hover{
     color:white;
-    background-color:rgb(43, 83, 196);
+    background-color:#818181;
 }
 
 /*---------- Callout ----------*/
@@ -196,7 +199,7 @@ a:not([href]) {
 }
 
 .social-icon i:hover{
-    color:rgb(229, 233, 3);
+    color:#818181;
 } 
 .social-tag{
     border:none;
@@ -252,6 +255,18 @@ a:not([href]) {
     color:white;
     font-size:50px;
     margin-bottom:15px;
+}
+
+.mountain{
+    border:none;
+}
+
+.mountain:hover{
+    color:#818181;
+}
+
+.pass-title{
+    border:none;
 }
 /*---------- Media Queries ----------*/
 
