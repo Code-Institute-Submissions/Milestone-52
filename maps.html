@@ -60,10 +60,10 @@
 <!-- Region Lists -->    
     <section>    
     <div class="container-fluid region-container">
-        <ul id="accordion">
-            <li>
-            <a href="#">ROCKIES</a>
-                <div class="box">
+        <ul id="accordion" class="accordion">
+            <li class="regions">
+            <a href="javascript:void(0)" class="active region-title">ROCKIES</a>
+                <div class="box active">
                     <div class="row list-groups">
                         <div class="col-lg-4 col-sm-12">
                             <ul class="list-group list-details">
@@ -114,8 +114,8 @@
                     </div>
                 </div>
             </li>
-            <li>
-            <a href="#">EAST</a>
+            <li class="regions">
+            <a href="javascript:void(0)" class="region-title">EAST</a>
                 <div class="box">
                     <div class="row list-groups">
                         <div class="col-lg-4 col-sm-12">
@@ -161,8 +161,8 @@
                     </div>
                 </div>
             </li>
-            <li>
-            <a href="#">WEST</a>
+            <li class="regions">
+            <a href="javascript:void(0)" class="region-title">WEST</a>
                 <div class="box">
                     <div class="row list-groups">
                         <div class="col-lg-4 col-sm-12">
@@ -197,8 +197,8 @@
                     </div>
                 </div>
             </li>
-            <li>
-            <a href="#">MIDWEST</a>
+            <li class="regions">
+            <a href="javascript:void(0)" class="region-title">MIDWEST</a>
                 <div class="box">
                     <div class="row list-groups">
                         <div class="col-lg-4 col-sm-12">
@@ -237,7 +237,7 @@
     </div>
     </section>
 <!-- Footer -->
-    <section>
+    <!--<section>
         <div class="container-fluid footer-element">
             <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
                 <div class="footer-element social-tag mr-auto"><p>Follow us on social media for flash sales and discounts</p></div>
@@ -261,7 +261,7 @@
                 </div>  
             </div>  
         </div>
-    </section>
+    </section> -->
 <!-- Google Map Script -->    
 <script>
 function initMap(){
@@ -287,7 +287,18 @@ function initMap(){
     $("#mySidenav").css("width", "0");
   });
 });
-</script>  
+</script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $(document).on('click','#accordion>li>a',function(){
+        $(this).siblings('.box').addClass('active');
+        $(this).closest('li').siblings('li').find('.box').removeClass('active');
+    })
+        $('#accordion').on('click','li>a',function(){
+            $('#accordion li a.active').removeClass('active');
+            $(this).addClass('active');
+        })
+</script>
 </body>
 </html>

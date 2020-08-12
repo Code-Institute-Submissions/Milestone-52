@@ -356,59 +356,64 @@ a:not([href]) {
   .sidenav a {font-size: 18px;}
 }
 
-
-.accordion-container{
+.region-container{
     position:relative;
     width:100%;
-    height:auto;
-    margin:auto;
-    box-sizing:border-box;
-}
+    height:1000px;
+    padding:0;
+    
 
+}
 .accordion{
     position:relative;
     width:100%;
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    border-top: 2px solid rgb(229, 233, 3);
 }
 
-.accordion li{
+.regions{
     list-style:none;
     display:inline;
 }
 
-.accordion li a{
+.region-title{
     display:inline-block;
-    width:19.4%;
-    height:50px;
-    line-height:55px;
-    text-align:center;
+    height:75px;
+    line-height:70px;
     text-decoration:none;
-    color:rgb(229, 233, 3);
-    font-size:30px;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size:50px;
+    width:24.9%;
+    text-align:center;
 }
 
-.accordion li .box{
+.box{
     position:absolute;
-    top:50px;
-    display: none;
-    padding:20px;
-    box-sizing:border-box;
+    top:80px;
+    display:none;
     background:rgb(43, 83, 196);
+    width:100%;
+    
 }
 
-ul li a.active{
-    background:rgb(43, 83, 196);
-}
-
-ul li .box.active{
+.accordion .regions .box.active{
     display:block;
 }
 
-.body{
-    margin:0;
-    padding:0;
+.accordion .regions .region-title.active{
+    background:white;
+    border-radius:20px;
 }
 
+.accordion .regions .region-title.active{
+    color:rgb(43, 83, 196);
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
