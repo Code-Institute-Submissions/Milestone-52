@@ -15,32 +15,35 @@
     <div class="container-fluid map-background">
 <!-- Hamburger Menu Icon-->    
         <div class="row">
-            <div class="col-6 map-header">
+            <div class="col-6 map-header mt-2">
                 <a href="index.html">Ski Village</a>
-                <hr class="rounded brand-rounded">
+                <hr class="rounded brand-rounded mb-3">
             </div>
             <div class="col-6">
-                <div class="d-flex justify-content-end p-3">
+                <div class="d-flex justify-content-end mt-2 p-3">
                     <i class="fas fa-bars menu-icon" aria-hidden="true"></i>
                 </div>
             </div>    
         </div>
-<!-- Google Map -->        
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="flex-row d-flex justify-content-around pt-3">
-                <div>
-                    <a id="rockies" href="javascript:void(0)" class="pass-title">EPIC</a>
-                </div>
-                <div>   
-                    <a id="east" href="javascript:void(0)" class="pass-title">COLLECTIVE</a>
-                </div>
-                <div>   
-                    <a id="west" href="javascript:void(0)" class="pass-title">IKON</a>
-                </div>
+        <div class="d-flex justify-content-around align-items-end">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
             </div>
+            
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+            </div>
+            
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+            </div>
+        </div>    
+<!-- Google Map -->
+        <div class="iframe-container">
+            <div class="iframe" id="map"></div> 
         </div>    
 <!-- Side Navigation -->        
         <div id="mySidenav" class="sidenav"> 
