@@ -24,10 +24,10 @@
                 </div>
             </div>    
         </div>
-        <div class="d-flex justify-content-around align-items-end mb-4">
-            <a href="#" class="btn epic-btn btn-lg active" role="button" aria-pressed="true">Show Epic</a>
-            <a href="#" class="btn collective-btn btn-lg active" role="button" aria-pressed="true">Show Collective</a>
-            <a href="#" class="btn ikon-btn btn-lg active" role="button" aria-pressed="true">Show Ikon</a>
+        <div class="d-flex justify-content-around align-items-center mb-4">
+            <button type="button" id="epic-btn" class="btn epic-btn btn-lg active" role="button" aria-pressed="true"><strong>Show Epic</strong></button>
+            <button type="button" id="collective-btn" class="btn collective-btn btn-lg active" role="button" aria-pressed="true">Show Collective</button>
+            <button type="button" id="ikon-btn" class="btn ikon-btn btn-lg active" role="button" aria-pressed="true">Show Ikon</button>
         </div>    
 <!-- Google Map -->
         <div class="iframe-container">
@@ -63,7 +63,7 @@
     </div>
     <!-- Pass Lists -->
     
-    <div class="container-fluid epic-container">
+    <div id="epic-container" class="container-fluid epic-container">
         <div class="row text-center">
             <div class="col-12">
                 <h1><strong>EPIC PASS</strong></h1>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid collective-container">
+    <div id="collective-container" class="container-fluid collective-container">
         <div class="row text-center">
             <div class="col-12">
                 <h1><strong>MOUNTAIN COLLECTIVE</strong></h1>
@@ -182,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid ikon-container">
+    <div id="ikon-container" class="container-fluid ikon-container">
         <div class="row text-center">
             <div class="col-12">
                 <h1><strong>IKON PASS</strong></h1>
@@ -306,31 +306,65 @@ function initMap(){
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript">
-    $(document).on('click','#accordion>li>a',function(){
-        $(this).siblings('.box').addClass('active');
-        $(this).closest('li').siblings('li').find('.box').removeClass('active');
-    })
-        $('#accordion').on('click','li>a',function(){
-            $('#accordion li a.active').removeClass('active');
-            $(this).addClass('active');
-        })
-</script>
 <script>
 $(document).ready(function(){
-  $("#rockies").click(function(){
-    $(".rockies").toggle();
+  $("#epic-btn").click(function(){
+    $("#epic-container").toggle();
   });
-  $("#east").click(function(){
-    $(".east").toggle();
+  $("#collective-btn").click(function(){
+    $("#collective-container").toggle();
   });
-  $("#west").click(function(){
-    $(".west").toggle();
-  });
-  $("#midwest").click(function(){
-    $(".midwest").toggle();
+  $("#ikon-btn").click(function(){
+    $("#ikon-container").toggle();
   });
 });
 </script>
+<script type="text/javascript">
+    clicked = true;
+    $(document).ready(function(){
+        $("#epic-btn").click(function(){
+            if(clicked){
+                $(this).css('background-color', 'rgb(160, 67, 64)');
+                clicked  = false;
+            } else {
+                $(this).css('background-color', 'rgb(255, 104, 98)');
+                clicked  = true;
+            }   
+        });
+        $("#epic-btn").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'Show Epic' ? 'Hide Epic' : 'Show Epic'
+		});
+    });
+        $("#collective-btn").click(function(){
+            if(clicked){
+                $(this).css('background-color', 'rgb(211, 211, 211');
+                clicked  = false;
+            } else {
+                $(this).css('background-color', 'rgb(255, 255, 255');
+                clicked  = true;
+            }   
+        });
+        $("#collective-btn").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'Show Collective' ? 'Hide Collective' : 'Show Collective'
+		});
+    });
+        $("#ikon-btn").click(function(){
+            if(clicked){
+                $(this).css('background-color', 'rgb(43, 83, 196)');
+                clicked  = false;
+            } else {
+                $(this).css('background-color', 'rgb(36, 59, 122)');
+                clicked  = true;
+            }   
+        });
+        $("#ikon-btn").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'Show Ikon' ? 'Hide Ikon' : 'Show Ikon'
+		});
+    });
+    });
+    </script>
 </body>
 </html>

@@ -294,6 +294,7 @@ a:not([href]) {
 .epic-container{
     height:100%;
     background-color:rgb(255, 104, 98);
+    display:none;
 }
 
 .epic-container a{
@@ -329,6 +330,7 @@ a:not([href]) {
 .collective-container{
     height:100%;
     background-color:white;
+    display:none;
 }
 
 .collective-container h1{
@@ -352,6 +354,7 @@ a:not([href]) {
 .ikon-container{
     height:100%;
     background-color:rgb(43, 83, 196);
+    display:none;
 }
 
 .ikon-container h1{
@@ -490,7 +493,6 @@ a:not([href]) {
 .epic-btn{
     background-color:rgb(255, 104, 98);
     color:white;
-    
 }
 
 .collective-btn{
