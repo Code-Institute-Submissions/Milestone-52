@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-
+    <script src="/js/maps.js"></script>
     <title>Map Comparison</title>
 </head>
 <body>
@@ -25,9 +25,9 @@
             </div>    
         </div>
         <div class="d-flex justify-content-around align-items-center mb-4">
-            <button type="button" id="epic-btn" class="btn epic-btn btn-lg active" role="button" aria-pressed="true"><strong>Show Epic</strong></button>
-            <button type="button" id="collective-btn" class="btn collective-btn btn-lg active" role="button" aria-pressed="true">Show Collective</button>
-            <button type="button" id="ikon-btn" class="btn ikon-btn btn-lg active" role="button" aria-pressed="true">Show Ikon</button>
+            <button type="button" href="javascript:void();" id="epic-btn" class="btn epic-btn btn-lg" role="button" aria-pressed="true"><strong>Show Epic</strong></button>
+            <button type="button" href="javascript:void();"  id="collective-btn" class="btn collective-btn btn-lg" role="button" aria-pressed="true">Show Collective</button>
+            <button type="button" href="javascript:void();"  id="ikon-btn" class="btn ikon-btn btn-lg" role="button" aria-pressed="true">Show Ikon</button>
         </div>    
 <!-- Google Map -->
         <div class="iframe-container">
@@ -278,93 +278,10 @@
             </div>  
         </div>
     </section>
-<!-- Google Map Script -->    
-<script>
-function initMap(){
-    var options = {
-        zoom:4,
-        center:{lat:39.8097,lng:-98.5556},
-        gestureHandling: 'cooperative'
-    }
-    var map = new google.maps.Map(document.getElementById("map"), options);
-}
-</script>
 
+<!-- Google Map Script -->    
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
 </script>
 
-<!-- SideNav Script -->
-<script>
-     $(document).ready(function(){
-  $(".menu-icon").mouseenter(function(){
-    $("#mySidenav").css("width", "450px");
-  });
-  $("#mySidenav").mouseleave(function(){
-    $("#mySidenav").css("width", "0");
-  });
-});
-</script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script>
-$(document).ready(function(){
-  $("#epic-btn").click(function(){
-    $("#epic-container").toggle();
-  });
-  $("#collective-btn").click(function(){
-    $("#collective-container").toggle();
-  });
-  $("#ikon-btn").click(function(){
-    $("#ikon-container").toggle();
-  });
-});
-</script>
-<script type="text/javascript">
-    clicked = true;
-    $(document).ready(function(){
-        $("#epic-btn").click(function(){
-            if(clicked){
-                $(this).css('background-color', 'rgb(160, 67, 64)');
-                clicked  = false;
-            } else {
-                $(this).css('background-color', 'rgb(255, 104, 98)');
-                clicked  = true;
-            }   
-        });
-        $("#epic-btn").click(function(){
-		$(this).text(function(i, v){
-		   return v === 'Show Epic' ? 'Hide Epic' : 'Show Epic'
-		});
-    });
-        $("#collective-btn").click(function(){
-            if(clicked){
-                $(this).css('background-color', 'rgb(211, 211, 211');
-                clicked  = false;
-            } else {
-                $(this).css('background-color', 'rgb(255, 255, 255');
-                clicked  = true;
-            }   
-        });
-        $("#collective-btn").click(function(){
-		$(this).text(function(i, v){
-		   return v === 'Show Collective' ? 'Hide Collective' : 'Show Collective'
-		});
-    });
-        $("#ikon-btn").click(function(){
-            if(clicked){
-                $(this).css('background-color', 'rgb(43, 83, 196)');
-                clicked  = false;
-            } else {
-                $(this).css('background-color', 'rgb(36, 59, 122)');
-                clicked  = true;
-            }   
-        });
-        $("#ikon-btn").click(function(){
-		$(this).text(function(i, v){
-		   return v === 'Show Ikon' ? 'Hide Ikon' : 'Show Ikon'
-		});
-    });
-    });
-    </script>
 </body>
 </html>

@@ -261,22 +261,42 @@ a:not([href]) {
     width: 75%;
 }
 
-.map-header{
+.map-header a{
     color:rgb(43, 83, 196);
     font-size:50px;
     font-family:'Black Han Sans', sans-serif;
-}
-
-.map-header a{
-    color:rgb(43, 83, 196);
     text-decoration:none;
 }
 
-.brand-rounded{
-    width:300px;
-    height:5px;
-    background-color:rgb(229, 233, 3);
-    margin:0;
+.epic-btn{
+    background-color:rgb(255, 104, 98);
+    color:white;
+    font-family:'Oswald', sans-serif;
+}
+.epic-pressed{
+    background-color:rgb(177, 73, 69);
+    color:white;
+    font-family:'Oswald', sans-serif;
+}
+
+.collective-btn{
+    background-color:rgb(255, 255, 255);
+    font-family:'Oswald', sans-serif;
+}
+.collective-pressed{
+    background-color:rgb(211, 211, 211);
+    font-family:'Oswald', sans-serif;
+}
+
+.ikon-btn{
+    background-color:rgb(43, 83, 196);
+    color:white;
+    font-family:'Oswald', sans-serif;
+}
+.ikon-pressed{
+    background-color:rgb(36, 59, 122);
+    color:white;
+    font-family:'Oswald', sans-serif;
 }
 
 .pass-title{
@@ -488,18 +508,4 @@ a:not([href]) {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-.epic-btn{
-    background-color:rgb(255, 104, 98);
-    color:white;
-}
-
-.collective-btn{
-    background-color:white;
-}
-
-.ikon-btn{
-    background-color:rgb(43, 83, 196);
-    color:white;
 }
