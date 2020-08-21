@@ -1,11 +1,11 @@
-function initMap(){
+function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom:4,
         center:{lat:39.8097,lng:-98.5556},
         gestureHandling: 'cooperative'
     });
 
-    var locations = [
+    var epicLocations = [
         {lat: 38.6848, lng: -120.0652},
         {lat: 38.9353, lng: -119.9399},
         {lat: 39.2733, lng: -120.1025},
@@ -39,16 +39,41 @@ function initMap(){
         {lat: 47.7448, lng: -121.0890},
         {lat: 42.4990, lng: -88.1877},
         {lat: 50.1130, lng: -122.9544}   
-    ]
+    ];
+    var collectiveLocations = [
+        {lat: 37.6308, lng: -119.0326},
+        {lat: 39.1976, lng: -120.2354},
+        {lat: 39.1863, lng: -106.8182},
+        {lat: 45.2857, lng: -111.4012},
+        {lat: 36.5960, lng: -105.4545},
+        {lat: 40.5884, lng: -111.6386},
+        {lat: 40.5811, lng: -111.6603},
+        {lat: 44.1359, lng: -72.8944},
+        {lat: 44.2717327, lng: -70.9250709},
+        {lat: 43.7871, lng: -110.9593},
+        {lat: 43.5875, lng: -110.8279},
+        {lat: 51.07861, lng: -115.78222},
+        {lat: 51.4419, lng: -116.1622},
+        {lat: 50.4604, lng: -116.2381},
+        {lat: 50.9583, lng: -118.1638},
+        {lat: 50.8844, lng: -119.8859}
+    ];
 
-    var markers = locations.map(function(location, i) {
+    var markers = epicLocations.map(function(location, i) {
         return new google.maps.Marker({
-            position: location
+            position: location,
+            map:map,
+            icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
         });
     });
 
-    var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    var markers = collectiveLocations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            map:map,
+            icon: 'http://labs.google.com/ridefinder/images/mm_20_white.png'
+        });
+    });
 }
     
 
