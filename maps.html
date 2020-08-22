@@ -12,23 +12,24 @@
     <title>Map Comparison</title>
 </head>
 <body>
-    <div class="container-fluid map-background">
-<!-- Hamburger Menu Icon-->    
+    <div class="container map-background">
+<!-- Header/Hamburger Menu Icon-->    
         <div class="row">
             <div class="col-6 map-header mt-2">
                 <a href="index.html">Ski Village</a>
             </div>
             <div class="col-6">
-                <div class="d-flex justify-content-end mt-2 p-3 mb-3">
+                <div class="d-flex justify-content-end mt-1 p-3 mb-1">
                     <i class="fas fa-bars menu-icon" aria-hidden="true"></i>
                 </div>
             </div>    
         </div>
+<!-- Pass Buttons-->        
         <div class="d-flex justify-content-around align-items-center mb-4">
-            <button type="button" href="javascript:void();" id="epic-btn" class="btn epic-btn btn-lg" role="button" aria-pressed="true"><strong>Show Epic</strong></button>
-            <button type="button" href="javascript:void();"  id="collective-btn" class="btn collective-btn btn-lg" role="button" aria-pressed="true">Show Collective</button>
-            <button type="button" href="javascript:void();"  id="ikon-btn" class="btn ikon-btn btn-lg" role="button" aria-pressed="true">Show Ikon</button>
-        </div>    
+            <button type="button" id="epic-btn" class="btn epic-btn btn-lg" aria-pressed="true">Show Epic</button>
+            <button type="button" id="collective-btn" class="btn collective-btn btn-lg" aria-pressed="true">Show Collective</button>
+            <button type="button" id="ikon-btn" class="btn ikon-btn btn-lg" aria-pressed="true">Show Ikon</button>
+        </div>  
 <!-- Google Map -->
         <div class="iframe-container">
             <div class="iframe" id="map"></div> 
@@ -62,199 +63,198 @@
         </div>
     </div>
     <!-- Pass Lists -->
-    
-    <div id="epic-container" class="container-fluid epic-container">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1><strong>EPIC PASS</strong></h1>
-                <hr class="rounded epic-rounded">
+        <div id="epic-container" class="container-fluid epic-container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1><strong>EPIC PASS</strong></h1>
+                    <hr class="rounded epic-rounded">
+                </div>
+            </div>
+            <div class="row list-groups">
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skiheavenly.com/" class="mountain-name">Heavenly, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.kirkwood.com/" class="mountain-name">Kirkwood, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.northstarcalifornia.com/" class="mountain-name">Northstar, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.beavercreek.com/" class="mountain-name">Beaver Creek, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.breckenridge.com/" class="mountain-name">Breckenridge, CO</a></li>                   
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skicb.com/" class="mountain-name">Crested Butte, CO</a></li>
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.keystoneresort.com/" class="mountain-name">Keystone, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.vail.com/" class="mountain-name">Vail, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.paolipeaks.com/" class="mountain-name">Paoli Peaks, IN</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mtbrighton.com/" class="mountain-name">Mt. Brighton, MI</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.aftonalps.com/" class="mountain-name">Afton Alps, MN</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.hiddenvalleyski.com/" class="mountain-name">Hidden Valley, MO</a></li>
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">    
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skisnowcreek.com/" class="mountain-name">Snow Creek, MO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.attitash.com/" class="mountain-name">Attitash, NH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.crotchedmtn.com/" class="mountain-name">Crotched, NH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mountsunapee.com/" class="mountain-name">Mount Sunapee, NH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skiwildcat.com/" class="mountain-name">Wildcat, NH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.huntermtn.com/" class="mountain-name">Hunter, NY</a></li>  
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.alpinevalleyohio.com/" class="mountain-name">Alpine Valley, OH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bmbw.com/" class="mountain-name">Boston Mills, OH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bmbw.com/" class="mountain-name">Brandywine, OH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skimadriver.com/" class="mountain-name">Mad River, OH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jfbb.com/" class="mountain-name">Big Boulder, PA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jfbb.com/" class="mountain-name">Jack Frost, PA</a></li>
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.libertymountainresort.com/" class="mountain-name">Liberty, PA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skiroundtop.com/" class="mountain-name">Roundtop, PA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skiwhitetail.com/" class="mountain-name">Whitetail, PA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.parkcitymountain.com/" class="mountain-name">Park City, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mountsnow.com/" class="mountain-name">Mount Snow, VT</a></li> 
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.okemo.com/" class="mountain-name">Okemo, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.stowe.com/" class="mountain-name">Stowe, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.stevenspass.com/" class="mountain-name">Stevens Pass, WA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.wilmotmountain.com/" class="mountain-name">Wilmot, WI</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jfbb.com/" class="mountain-name">Whistler,<i>Canada</i></a></li>  
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row list-groups">
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.skiheavenly.com/"><li class="list-group-item mountain-name">Heavenly, CA</li></a>
-                    <a target="_blank" href="https://www.kirkwood.com/"><li class="list-group-item mountain-name">Kirkwood, CA</li></a>
-                    <a target="_blank" href="https://www.northstarcalifornia.com/"><li class="list-group-item mountain-name">Northstar, CA</li></a> 
-                    <a target="_blank" href="https://www.beavercreek.com/"><li class="list-group-item mountain-name">Beaver Creek, CO</li></a>
-                    <a target="_blank" href="https://www.breckenridge.com/"><li class="list-group-item mountain-name">Breckenridge, CO</li></a>                   
-                    <a target="_blank" href="https://www.skicb.com/"><li class="list-group-item mountain-name">Crested Butte, CO</li></a>
-                 </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.keystoneresort.com/"><li class="list-group-item mountain-name">Keystone, CO</li></a>
-                    <a target="_blank" href="https://www.vail.com/"><li class="list-group-item mountain-name">Vail, CO</li></a>
-                    <a target="_blank" href="https://www.paolipeaks.com/"><li class="list-group-item mountain-name">Paoli Peaks, IN</li></a>
-                    <a target="_blank" href="https://www.mtbrighton.com/"><li class="list-group-item mountain-name">Mt. Brighton, MI</li></a>
-                    <a target="_blank" href="https://www.aftonalps.com/"><li class="list-group-item mountain-name">Afton Alps, MN</li></a>
-                    <a target="_blank" href="https://www.hiddenvalleyski.com/"> <li class="list-group-item mountain-name">Hidden Valley, MO</li></a>
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">    
-                    <a target="_blank" href="https://www.skisnowcreek.com/"><li class="list-group-item mountain-name">Snow Creek, MO</li></a>
-                    <a target="_blank" href="https://www.attitash.com/"><li class="list-group-item mountain-name">Attitash, NH</li></a>
-                    <a target="_blank" href="https://www.crotchedmtn.com/"><li class="list-group-item mountain-name">Crotched, NH</li></a>
-                    <a target="_blank" href="https://www.mountsunapee.com/"><li class="list-group-item mountain-name">Mount Sunapee, NH</li></a>
-                    <a target="_blank" href="https://www.skiwildcat.com/"><li class="list-group-item mountain-name">Wildcat, NH</li></a>
-                    <a target="_blank" href="https://www.huntermtn.com/"><li class="list-group-item mountain-name">Hunter, NY</li></a>  
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.alpinevalleyohio.com/"> <li class="list-group-item mountain-name">Alpine Valley, OH</li></a>
-                    <a target="_blank" href="https://www.bmbw.com/"><li class="list-group-item mountain-name">Boston Mills, OH</li></a>
-                    <a target="_blank" href="https://www.bmbw.com/"><li class="list-group-item mountain-name">Brandywine, OH</li></a>
-                    <a target="_blank" href="https://www.skimadriver.com/"><li class="list-group-item mountain-name">Mad River, OH</li></a>
-                    <a target="_blank" href="https://www.jfbb.com/"><li class="list-group-item mountain-name">Big Boulder, PA</li></a>
-                    <a target="_blank" href="https://www.jfbb.com/"><li class="list-group-item mountain-name">Jack Frost, PA</li></a>
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.libertymountainresort.com/"><li class="list-group-item mountain-name">Liberty, PA</li></a>
-                    <a target="_blank" href="https://www.skiroundtop.com/"><li class="list-group-item mountain-name">Roundtop, PA</li></a>
-                    <a target="_blank" href="https://www.skiwhitetail.com/"><li class="list-group-item mountain-name">Whitetail, PA</li></a>
-                    <a target="_blank" href="https://www.parkcitymountain.com/"><li class="list-group-item mountain-name">Park City, UT</li></a>
-                    <a target="_blank" href="https://www.mountsnow.com/"> <li class="list-group-item mountain-name">Mount Snow, VT</li></a>  
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.okemo.com/"><li class="list-group-item mountain-name">Okemo, VT</li></a>
-                    <a target="_blank" href="https://www.stowe.com/"><li class="list-group-item mountain-name">Stowe, VT</li></a>
-                    <a target="_blank" href="https://www.stevenspass.com/"> <li class="list-group-item mountain-name">Stevens Pass, WA</li></a>
-                    <a target="_blank" href="https://www.wilmotmountain.com/"><li class="list-group-item mountain-name">Wilmot, WI</li></a>
-                    <a target="_blank" href="https://www.jfbb.com/"><li class="list-group-item mountain-name">Whistler,<i>Canada</i></li></a>  
-                </ul>
+        <div id="collective-container" class="container-fluid collective-container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1><strong>MOUNTAIN COLLECTIVE</strong></h1>
+                    <hr class="rounded collective-rounded">
+                </div>
+            </div>
+            <div class="row list-groups">
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mammothmountain.com/" class="mountain-name">Mammoth, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.squawalpine.com/" class="mountain-name">Squaw Valley, CA</a></li> 
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.arapahoebasin.com/" class="mountain-name">Arapahoe Basin, CO</a></li>
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.aspensnowmass.com/" class="mountain-name">Aspen Snowmass, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarloaf.com/" class="mountain-name">Sugarloaf, ME</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bigskyresort.com/" class="mountain-name">Big Sky, MT</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sktaos.com/" class="mountain-name">Taos, NM</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.alta.com/" class="mountain-name">Alta, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowbird.com/" class="mountain-name">Snowbird, UT</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarbush.com/" class="mountain-name">Sugarbush, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.grandtarghee.com/" class="mountain-name">Grand Targhee, WY</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jacksonhole.com/" class="mountain-name">Jackson Hole, WY</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skibanff.com/" class="mountain-name">Banff,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skilouise.com/" class="mountain-name">Lake Louise,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.panoramaresort.com/" class="mountain-name">Panorama,<i>Canada</i></a></li> 
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.revelstokemountainresort.com/" class="mountain-name">Revelstoke,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sunpeaksresort.com/" class="mountain-name">Sun Peaks,<i>Canada</i></a></li>    
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="collective-container" class="container-fluid collective-container">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1><strong>MOUNTAIN COLLECTIVE</strong></h1>
-                <hr class="rounded collective-rounded">
+        <div id="ikon-container" class="container-fluid ikon-container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1><strong>IKON PASS</strong></h1>
+                    <hr class="rounded ikon-rounded">
+                </div>
             </div>
-        </div>
-        <div class="row list-groups">
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.mammothmountain.com/"><li class="list-group-item mountain-name">Mammoth, CA</li></a>
-                    <a target="_blank" href="https://www.squawalpine.com/"><li class="list-group-item mountain-name">Squaw Valley, CA</li></a> 
-                    <a target="_blank" href="https://www.arapahoebasin.com/"><li class="list-group-item mountain-name">Arapahoe Basin, CO</li></a>
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.aspensnowmass.com/"><li class="list-group-item mountain-name">Aspen Snowmass, CO</li></a>
-                    <a target="_blank" href="https://www.sugarloaf.com/"><li class="list-group-item mountain-name">Sugarloaf, ME</li></a>
-                    <a target="_blank" href="https://www.bigskyresort.com/"><li class="list-group-item mountain-name">Big Sky, MT</li></a>
-                </ul>
+            <div class="row list-groups">
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bigbearmountainresort.com/" class="mountain-name">Big Bear, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.junemountain.com/" class="mountain-name">June, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mammothmountain.com/" class="mountain-name">Mammoth, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.squawalpine.com/" class="mountain-name">Squaw Valley, CA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.arapahoebasin.com/" class="mountain-name">Arapahoe Basin, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.aspensnowmass.com/" class="mountain-name">Aspen Snowmass, CO</a></li>
+                    </ul>
+                </div>      
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.coppercolorado.com/" class="mountain-name">Copper, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.steamboat.com/" class="mountain-name">Steamboat, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.winterparkresort.com/" class="mountain-name">Winter Park, CO</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sundayriver.com/" class="mountain-name">Sunday River, ME</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarloaf.com/" class="mountain-name">Sugarloaf, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.boynehighlands.com/" class="mountain-name">Boyne Highlands, MI</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.boynemountain.com/" class="mountain-name">Boyne Mountain, MI</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bigskyresort.com/" class="mountain-name">Big Sky, MT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.loonmtn.com/" class="mountain-name">Loon, NH</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sktaos.com/" class="mountain-name">Taos, NM</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.windhammountain.com/" class="mountain-name">Windham, NY</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mtbachelor.com/" class="mountain-name">Mt. Bachelor, OR</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.alta.com/" class="mountain-name">Alta, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.brightonresort.com/" class="mountain-name">Brighton, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.deervalley.com/" class="mountain-name">Deer Valley, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowbird.com/" class="mountain-name">Snowbird, UT</a></li> 
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.solitudemountain.com/" class="mountain-name">Solitude, UT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.steamboat.com/" class="mountain-name">Steamboat, UT</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.killington.com/" class="mountain-name">Killington-Pico, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.stratton.com/" class="mountain-name">Stratton, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarbush.com/" class="mountain-name">Sugarbush, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.crystalmountainresort.com/" class="mountain-name">Crystal, WA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.summitatsnoqualmie.com/" class="mountain-name">Snoqualmie, WA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowshoemtn.com/" class="mountain-name">Snowshoe, WV</a></li>   
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jacksonhole.com/" class="mountain-name">Jackson Hole, WY</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bluemountain.ca/" class="mountain-name">Blue Mountain,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.cypressmountain.com/" class="mountain-name">Cypress,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.revelstokemountainresort.com/" class="mountain-name">Revelstoke,<i>Canada</i></a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skibig3.com/" class="mountain-name">SkiBig3,<i>Canada</i></a></li> 
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.tremblant.ca/" class="mountain-name">Tremblant,<i>Canada</i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.sktaos.com/"><li class="list-group-item mountain-name">Taos, NM</li></a>
-                    <a target="_blank" href="https://www.alta.com/"><li class="list-group-item mountain-name">Alta, UT</li></a>
-                    <a target="_blank" href="https://www.snowbird.com/"><li class="list-group-item mountain-name">Snowbird, UT</li></a>
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.sugarbush.com/"><li class="list-group-item mountain-name">Sugarbush, VT</li></a>
-                    <a target="_blank" href="https://www.grandtarghee.com/"><li class="list-group-item mountain-name">Grand Targhee, WY</li></a>
-                    <a target="_blank" href="https://www.jacksonhole.com/"><li class="list-group-item mountain-name">Jackson Hole, WY</li></a>
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.skibanff.com/"><li class="list-group-item mountain-name">Banff,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.skilouise.com/"><li class="list-group-item mountain-name">Lake Louise,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.panoramaresort.com/"><li class="list-group-item mountain-name">Panorama,<i>Canada</i></li></a> 
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.revelstokemountainresort.com/"><li class="list-group-item mountain-name">Revelstoke,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.sunpeaksresort.com/"><li class="list-group-item mountain-name">Sun Peaks,<i>Canada</i></li></a>    
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="ikon-container" class="container-fluid ikon-container">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1><strong>IKON PASS</strong></h1>
-                <hr class="rounded ikon-rounded">
-            </div>
-        </div>
-        <div class="row list-groups">
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.bigbearmountainresort.com/"><li class="list-group-item mountain-name">Big Bear, CA</li></a>
-                    <a target="_blank" href="https://www.junemountain.com/"><li class="list-group-item mountain-name">June, CA</li></a>
-                    <a target="_blank" href="https://www.mammothmountain.com/"><li class="list-group-item mountain-name">Mammoth, CA</li></a>
-                    <a target="_blank" href="https://www.squawalpine.com/"><li class="list-group-item mountain-name">Squaw Valley, CA</li></a>
-                    <a target="_blank" href="https://www.arapahoebasin.com/"><li class="list-group-item mountain-name">Arapahoe Basin, CO</li></a>
-                    <a target="_blank" href="https://www.aspensnowmass.com/"><li class="list-group-item mountain-name">Aspen Snowmass, CO</li></a>
-                </ul>
-            </div>      
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.coppercolorado.com/"><li class="list-group-item mountain-name">Copper, CO</li></a>
-                    <a target="_blank" href="https://www.steamboat.com/"><li class="list-group-item mountain-name">Steamboat, CO</li></a>
-                    <a target="_blank" href="https://www.winterparkresort.com/"><li class="list-group-item mountain-name">Winter Park, CO</li></a>
-                    <a target="_blank" href="https://www.sundayriver.com/"><li class="list-group-item mountain-name">Sunday River, ME</li></a>
-                    <a target="_blank" href="https://www.sugarloaf.com/"><li class="list-group-item mountain-name">Sugarloaf, VT</li></a>
-                    <a target="_blank" href="https://www.boynehighlands.com/"><li class="list-group-item mountain-name">Boyne Highlands, MI</li></a>
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.boynemountain.com/"><li class="list-group-item mountain-name">Boyne Mountain, MI</li></a>
-                    <a target="_blank" href="https://www.bigskyresort.com/"><li class="list-group-item mountain-name">Big Sky, MT</li></a>
-                    <a target="_blank" href="https://www.loonmtn.com/"><li class="list-group-item mountain-name">Loon, NH</li></a>
-                    <a target="_blank" href="https://www.sktaos.com/"><li class="list-group-item mountain-name">Taos, NM</li></a>
-                    <a target="_blank" href="https://www.windhammountain.com/"><li class="list-group-item mountain-name">Windham, NY</li></a>
-                    <a target="_blank" href="https://www.mtbachelor.com/"><li class="list-group-item mountain-name">Mt. Bachelor, OR</li></a>
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.alta.com/"><li class="list-group-item mountain-name">Alta, UT</li></a>
-                    <a target="_blank" href="https://www.brightonresort.com/"><li class="list-group-item mountain-name">Brighton, UT</li></a>
-                    <a target="_blank" href="https://www.deervalley.com/"><li class="list-group-item mountain-name">Deer Valley, UT</li></a>
-                    <a target="_blank" href="https://www.snowbird.com/"><li class="list-group-item mountain-name">Snowbird, UT</li></a> 
-                    <a target="_blank" href="https://www.solitudemountain.com/"><li class="list-group-item mountain-name">Solitude, UT</li></a>
-                    <a target="_blank" href="https://www.steamboat.com/"><li class="list-group-item mountain-name">Steamboat, UT</li></a>
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.killington.com/"><li class="list-group-item mountain-name">Killington-Pico, VT</li></a>
-                    <a target="_blank" href="https://www.stratton.com/"><li class="list-group-item mountain-name">Stratton, VT</li></a>
-                    <a target="_blank" href="https://www.sugarbush.com/"><li class="list-group-item mountain-name">Sugarbush, VT</li></a>
-                    <a target="_blank" href="https://www.crystalmountainresort.com/"><li class="list-group-item mountain-name">Crystal, WA</li></a>
-                    <a target="_blank" href="https://www.summitatsnoqualmie.com/"><li class="list-group-item mountain-name">Snoqualmie, WA</li></a>
-                    <a target="_blank" href="https://www.snowshoemtn.com/"><li class="list-group-item mountain-name">Snowshoe, WV</li></a>   
-                </ul>
-            </div>
-            <div class="col-2">
-                <ul class="list-group">
-                    <a target="_blank" href="https://www.jacksonhole.com/"><li class="list-group-item mountain-name">Jackson Hole, WY</li></a>
-                    <a target="_blank" href="https://www.bluemountain.ca/"><li class="list-group-item mountain-name">Blue Mountain,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.cypressmountain.com/"><li class="list-group-item mountain-name">Cypress,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.revelstokemountainresort.com/"><li class="list-group-item mountain-name">Revelstoke,<i>Canada</i></li></a>
-                    <a target="_blank" href="https://www.skibig3.com/"><li class="list-group-item mountain-name">SkiBig3,<i>Canada</i></li></a> 
-                    <a target="_blank" href="https://www.tremblant.ca/"><li class="list-group-item mountain-name">Tremblant,<i>Canada</i></li></a>
-                </ul>
-            </div>
-        </div>
-    </div>
+        </div>         
 <!-- Footer -->
-    <section>
-        <div class="container-fluid map-footer">
+    <div class="container-fluid">
+        <div class="map-footer">
             <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
                 <div class="map-footer map-footer-tag mr-auto"><p>Follow us on social media for flash sales and discounts</p></div>
                 <div class="map-footer map-social-icon">
@@ -277,7 +277,10 @@
                 </div>  
             </div>  
         </div>
-    </section>
+    </div> 
+
+
+
 
 <!-- Google Map Script -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
