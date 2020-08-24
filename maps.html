@@ -9,60 +9,52 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script src="/js/maps.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <title>Map Comparison</title>
 </head>
 <body>
     <div class="container map-background">
-<!-- Header/Hamburger Menu Icon-->    
-        <div class="row">
-            <div class="col-6 map-header mt-2">
-                <a href="index.html">Ski Village</a>
-            </div>
-            <div class="col-6">
-                <div class="d-flex justify-content-end mt-1 p-3 mb-1">
-                    <i class="fas fa-bars menu-icon" aria-hidden="true"></i>
+<!--Dropdown Menu-->    
+        <div class="menu-container">
+            <div class="dropdown">
+                <button class="btn btn-lg dropdown-toggle map-menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <h3 class="text-center pt-2">Map Options</h3>
+                    <button id="epic-btn" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
+                    <button id="collective-btn" class="dropdown-item bg-transparent collective-btn" type="button">Show Collective Mountains</button>
+                    <button id="ikon-btn" class="dropdown-item bg-transparent ikon-btn" type="button">Show Ikon Mountains</button>
+                    <h3 class="text-center pt-2">Site Navigation</h3>
+                    <a class="dropdown-item bg-transparent home-btn" type="button" href="index.html">Home</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex flex-row justify-content-around mt-3 mb-3">
+                        <div class="map-social-icon">
+                            <a target="_blank" href="https://www.facebook.com/">
+                            <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="map-social-icon">
+                            <a target="_blank" href="https://www.twitter.com/">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="map-social-icon">
+                            <a target="_blank" href="https://www.instagram.com/">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                            </a>
+                        </div>  
+                    </div>
                 </div>
-            </div>    
-        </div>
-<!-- Pass Buttons-->        
-        <div class="d-flex justify-content-around align-items-center mb-4">
-            <button type="button" id="epic-btn" class="btn epic-btn btn-lg" aria-pressed="true">Show Epic</button>
-            <button type="button" id="collective-btn" class="btn collective-btn btn-lg" aria-pressed="true">Show Collective</button>
-            <button type="button" id="ikon-btn" class="btn ikon-btn btn-lg" aria-pressed="true">Show Ikon</button>
-        </div>  
+            </div>   
+        </div>        
 <!-- Google Map -->
         <div class="iframe-container">
-            <div class="iframe" id="map"></div> 
-        </div>    
-<!-- Side Navigation -->        
-        <div id="mySidenav" class="sidenav"> 
-            <a href="index.html">Home</a>
-            <a href="maps.html">Map Comparison</a>
-            <a href="#">Price Comparison</a>
-            <a href="#">Contact</a>
-            <div class="d-flex flex-row justify-content-center align-items-end">
-                <div class="sideNav-social">
-                    <a target="_blank" href="https://www.facebook.com/">
-                        <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </div>
-                <div class="sideNav-social">
-                    <a target="_blank" href="https://www.twitter.com/">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                </div>
-                <div class="sideNav-social">
-                    <a target="_blank" href="https://www.instagram.com/">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </div>
-            </div>  
+            <div class="iframe mt-2" id="map"></div> 
         </div>
-    </div>
-    <!-- Pass Lists -->
+    </div>              
+<!-- Pass Lists -->
         <div id="epic-container" class="container-fluid epic-container">
             <div class="row text-center">
                 <div class="col-12">
@@ -71,7 +63,7 @@
                 </div>
             </div>
             <div class="row list-groups">
-                <div class="col-2">
+                <div class="lg-col-2">
                     <ul class="list-group">
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.skiheavenly.com/" class="mountain-name">Heavenly, CA</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.kirkwood.com/" class="mountain-name">Kirkwood, CA</a></li>
@@ -206,43 +198,42 @@
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.steamboat.com/" class="mountain-name">Steamboat, CO</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.winterparkresort.com/" class="mountain-name">Winter Park, CO</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sundayriver.com/" class="mountain-name">Sunday River, ME</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarloaf.com/" class="mountain-name">Sugarloaf, VT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.boynehighlands.com/" class="mountain-name">Boyne Highlands, MI</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.boynemountain.com/" class="mountain-name">Boyne Mountain, MI</a></li>
                     </ul>
                 </div>
                 <div class="col-2">
                     <ul class="list-group">
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.boynemountain.com/" class="mountain-name">Boyne Mountain, MI</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bigskyresort.com/" class="mountain-name">Big Sky, MT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.loonmtn.com/" class="mountain-name">Loon, NH</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sktaos.com/" class="mountain-name">Taos, NM</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.windhammountain.com/" class="mountain-name">Windham, NY</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.mtbachelor.com/" class="mountain-name">Mt. Bachelor, OR</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.alta.com/" class="mountain-name">Alta, UT</a></li>
                     </ul>
                 </div>
                 <div class="col-2">
                     <ul class="list-group">
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.alta.com/" class="mountain-name">Alta, UT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.brightonresort.com/" class="mountain-name">Brighton, UT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.deervalley.com/" class="mountain-name">Deer Valley, UT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowbird.com/" class="mountain-name">Snowbird, UT</a></li> 
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.solitudemountain.com/" class="mountain-name">Solitude, UT</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.steamboat.com/" class="mountain-name">Steamboat, UT</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="list-group">
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.killington.com/" class="mountain-name">Killington-Pico, VT</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.stratton.com/" class="mountain-name">Stratton, VT</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarbush.com/" class="mountain-name">Sugarbush, VT</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.crystalmountainresort.com/" class="mountain-name">Crystal, WA</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.summitatsnoqualmie.com/" class="mountain-name">Snoqualmie, WA</a></li>
-                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowshoemtn.com/" class="mountain-name">Snowshoe, WV</a></li>   
                     </ul>
                 </div>
                 <div class="col-2">
                     <ul class="list-group">
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarbush.com/" class="mountain-name">Sugarbush, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.sugarloaf.com/" class="mountain-name">Sugarloaf, VT</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.crystalmountainresort.com/" class="mountain-name">Crystal, WA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.summitatsnoqualmie.com/" class="mountain-name">Snoqualmie, WA</a></li>
+                        <li class="list-group-item mountain-name"><a target="_blank" href="https://www.snowshoemtn.com/" class="mountain-name">Snowshoe, WV</a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.jacksonhole.com/" class="mountain-name">Jackson Hole, WY</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group">
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.bluemountain.ca/" class="mountain-name">Blue Mountain,<i>Canada</i></a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.cypressmountain.com/" class="mountain-name">Cypress,<i>Canada</i></a></li>
                         <li class="list-group-item mountain-name"><a target="_blank" href="https://www.revelstokemountainresort.com/" class="mountain-name">Revelstoke,<i>Canada</i></a></li>
@@ -252,24 +243,23 @@
                 </div>
             </div>
         </div>         
-<!-- Footer -->
-    <div class="container-fluid">
-        <div class="map-footer">
+<section>
+        <div class="footer-element">
             <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
-                <div class="map-footer map-footer-tag mr-auto"><p>Follow us on social media for flash sales and discounts</p></div>
-                <div class="map-footer map-social-icon">
+                <div class="footer-element social-tag mr-auto"><p class="ml-2">Follow us on social media for flash sales and discounts</p></div>
+                <div class="footer-element social-icon">
                     <a target="_blank" href="https://www.facebook.com/">
                         <i class=" fab fa-facebook-f" aria-hidden="true"></i>
                         <span class="sr-only">Facebook</span>
                     </a>
                 </div>
-                <div class="map-footer map-social-icon">
+                <div class="footer-element social-icon">
                     <a target="_blank" href="https://www.twitter.com/">
                         <i class="fab fa-twitter" aria-hidden="true"></i>
                         <span class="sr-only">Twitter</span>
                     </a>
                 </div>
-                <div class="map-footer map-social-icon">
+                <div class="footer-element social-icon">
                     <a target="_blank" href="https://www.instagram.com/">
                         <i class="fab fa-instagram" aria-hidden="true"></i>
                         <span class="sr-only">Instagram</span>
@@ -277,11 +267,7 @@
                 </div>  
             </div>  
         </div>
-    </div> 
-
-
-
-
+    </section>
 <!-- Google Map Script -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
 </script>

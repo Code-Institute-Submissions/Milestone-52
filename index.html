@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <title>Ski Village| Season Pass Comparison Site</title>
 
 </head>
@@ -21,35 +21,38 @@
                 <div class="col-auto mr-auto">
                     <h1 class="pt-3">Ski<br>Village</h1>
                 </div>
-<!-- Side Navigation -->              
-                <div id="mySidenav" class="sidenav">
-                    <a href="maps.html">Map Comparison</a>
-                    <a href="accordion.html">Price Comparison</a>
-                    <a href="#">Contact</a>
-                    <div class="d-flex flex-row justify-content-center align-items-end nav-social">
-                        <div class="sideNav-social">
+<!-- Dropdown Menu -->
+        <div class="d-flex justify-content-end align-items-start">
+            <div class="btn-group dropleft">
+                <button class="btn shadow-none menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a><i class="fas fa-bars menu-icon mt-4 mr-3" aria-hidden="true"></i></a>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item bg-transparent home-menu-links" type="button" href="maps.html">Map Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex flex-row justify-content-around mt-3 mb-3">
+                        <div class="map-social-icon">
                             <a target="_blank" href="https://www.facebook.com/">
-                                <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
+                            <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
                             </a>
                         </div>
-                        <div class="sideNav-social">
+                        <div class="map-social-icon">
                             <a target="_blank" href="https://www.twitter.com/">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
                             </a>
                         </div>
-                        <div class="sideNav-social">
+                        <div class="map-social-icon">
                             <a target="_blank" href="https://www.instagram.com/">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                             </a>
-                        </div>
-                    </div>  
+                        </div>  
+                    </div>
                 </div>
-<!-- Hamburger Menu Icon -->
-                    <a><i class="fas fa-bars menu-icon mt-4 mr-3" aria-hidden="true"></i></a>
-            </div>
+            </div>               
+        </div> 
+    </div>                               
 <!-- Header H2 -->            
             <div class="row">
                 <div class="col-12">    
@@ -120,7 +123,7 @@
     </section>
 <!-- Footer -->
     <section>
-        <div class="container-fluid footer-element">
+        <div class="footer-element">
             <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
                 <div class="footer-element social-tag mr-auto"><p>Follow us on social media for flash sales and discounts</p></div>
                 <div class="footer-element social-icon">
@@ -144,17 +147,5 @@
             </div>  
         </div>
     </section>
-    
-<!-- SideNav Script -->
-    <script>
-     $(document).ready(function(){
-  $(".menu-icon").mouseenter(function(){
-    $("#mySidenav").css("width", "450px");
-  });
-  $("#mySidenav").mouseleave(function(){
-    $("#mySidenav").css("width", "0");
-  });
-});
-    </script>  
 </body>
 </html>

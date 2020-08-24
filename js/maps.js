@@ -58,12 +58,49 @@ function initMap() {
         {lat: 50.9583, lng: -118.1638},
         {lat: 50.8844, lng: -119.8859}
     ];
+    var ikonLocations =[
+        {lat: 34.2267, lng: -116.8602},
+        {lat: 37.7679, lng: -119.0906},
+        {lat: 37.6308, lng: -119.0326},
+        {lat: 39.1970, lng: -120.2357},
+        {lat: 39.6425, lng: -105.8719},
+        {lat: 39.1863, lng: -106.8182},
+        {lat: 39.5014, lng: -106.1516},
+        {lat: 40.4572, lng: -106.8045},
+        {lat: 39.8868, lng: -105.7625},
+        {lat: 44.4734, lng: -70.8569},
+        {lat: 45.0541, lng: -70.3085},
+        {lat: 45.4702, lng: -84.9379},
+        {lat: 45.2857, lng: -111.4012},
+        {lat: 44.0564, lng: -71.6333},
+        {lat: 36.5960, lng: -105.4545},
+        {lat: 42.2937, lng: -74.2567},
+        {lat: 44.0029, lng: -121.6791},
+        {lat: 40.5884, lng: -111.6386},
+        {lat: 40.5980, lng: -111.5832},
+        {lat: 40.6374, lng: -111.4783},
+        {lat: 40.5818, lng: -111.6552},
+        {lat: 40.6199, lng: -111.5919},
+        {lat: 43.6263, lng: -72.7968},
+        {lat: 43.1134, lng: -72.9081},
+        {lat: 44.1359, lng: -72.8944},
+        {lat: 45.0541, lng: -70.3085},
+        {lat: 46.9282, lng: -121.5045},
+        {lat: 47.4240, lng: -121.4160},
+        {lat: 38.4108, lng: -79.9936},
+        {lat: 43.5875, lng: -110.8279},
+        {lat: 40.8107, lng: -75.5209},
+        {lat: 49.3960, lng: -123.2045},
+        {lat: 50.9583, lng: -118.1638},
+        {lat: 51.1152, lng: -115.7633},
+        {lat: 46.2096, lng: -74.5853}
+    ];
 
     var markers = epicLocations.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
             map:map,
-            icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
+            icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-circle.png'
         });
     });
 
@@ -71,21 +108,19 @@ function initMap() {
         return new google.maps.Marker({
             position: location,
             map:map,
-            icon: 'http://labs.google.com/ridefinder/images/mm_20_white.png'
+            icon: 'http://maps.google.com/mapfiles/kml/paddle/wht-circle.png'
+        });
+    });
+
+    var markers = ikonLocations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            map:map,
+            icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-circle.png'
         });
     });
 }
     
-
-$(document).ready(function(){
-  $(".menu-icon").mouseenter(function(){
-    $("#mySidenav").css("width", "450px");
-  });
-  $("#mySidenav").mouseleave(function(){
-    $("#mySidenav").css("width", "0");
-  });
-});
-
 $(document).ready(function(){
   $("#epic-btn").click(function(){
     $("#epic-container").toggle();
@@ -98,14 +133,13 @@ $(document).ready(function(){
   });
 });
 
-
 $(document).ready(function(){
   $(".epic-btn").click(function() {
   $(this).toggleClass('epic-pressed');
     });
         $(".epic-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Show Epic' ? 'Hide Epic' : 'Show Epic'
+		   return v === 'Hide Epic Mountains' ? 'Show Epic Mountains' : 'Hide Epic Mountains'
 		});
     });
     });
@@ -116,7 +150,7 @@ $(document).ready(function(){
     });
   $(".ikon-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Show Ikon' ? 'Hide Ikon' : 'Show Ikon'
+		   return v === 'Hide Ikon Mountains' ? 'Show Ikon Mountains' : 'Hide Ikon Mountains'
 		});
     });  
     });
@@ -127,7 +161,7 @@ $(document).ready(function(){
     });
         $(".collective-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Show Collective' ? 'Hide Collective' : 'Show Collective'
+		   return v === 'Hide Collective Mountains' ? 'Show Collective Mountains' : 'Hide Collective Mountains'
 		});
     });
     });
