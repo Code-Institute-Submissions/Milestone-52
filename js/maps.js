@@ -1,5 +1,7 @@
 let map;
-let markers = [];
+let emarkers = [];
+let cmarkers = [];
+let imarkers = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -104,30 +106,33 @@ function initMap() {
             position: location,
             map:null,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-circle.png'
-    });
-    markers.push(epicMarkers);
-    return epicMarkers;
+         });
+         emarkers.push(epicMarkers);
+         return epicMarkers;
     });
       
     
     
 
     var collective = collectiveLocations.map(function(location, i) {
-        var markers = new google.maps.Marker({
+        var collectiveMarkers = new google.maps.Marker({
             position: location,
-            map:map,
+            map:null,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/wht-circle.png'
         });
+        cmarkers.push(collectiveMarkers);
+        return collectiveMarkers;
     });
 
     var ikon = ikonLocations.map(function(location, i) {
-        return new google.maps.Marker({
+        var ikonMarkers = new google.maps.Marker({
             position: location,
-            map:map,
+            map:null,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-circle.png'
         });
+        imarkers.push(ikonMarkers);
+        return ikonMarkers;
     });
-     
 }
 
 $(document).ready(function(){
@@ -175,11 +180,7 @@ $(document).ready(function(){
     });
     });
 
-        
-      
-    
-
-function toggleMarker() {
+function toggleEpic() {
     var e = document.getElementById("epic-btn");
     if (e.classList.contains('epic-pressed'))
     {
@@ -188,10 +189,38 @@ function toggleMarker() {
     else 
     {
         show = map;
-        console.log("Hello world!");
     }
-    for (var i = 0; i < markers.length; i++) {
-		markers[i].setMap(show);
+    for (var i = 0; i < emarkers.length; i++) {
+		emarkers[i].setMap(show);
     };
 };
 
+function toggleCollective() {
+    var c = document.getElementById("collective-btn");
+    if (c.classList.contains('collective-pressed'))
+    {
+        show = null;
+    }
+    else 
+    {
+        show = map;
+    }
+    for (var i = 0; i < cmarkers.length; i++) {
+		cmarkers[i].setMap(show);
+    };
+};
+
+function toggleIkon() {
+    var k = document.getElementById("ikon-btn");
+    if (k.classList.contains('ikon-pressed'))
+    {
+        show = null;
+    }
+    else 
+    {
+        show = map;
+    }
+    for (var i = 0; i < imarkers.length; i++) {
+		imarkers[i].setMap(show);
+    };
+};
