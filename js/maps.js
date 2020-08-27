@@ -1,5 +1,8 @@
+let map;
+let markers = [];
+
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
         zoom:4,
         center:{lat:39.8097,lng:-98.5556},
         gestureHandling: 'cooperative'
@@ -96,31 +99,37 @@ function initMap() {
         {lat: 46.2096, lng: -74.5853}
     ];
 
-    var markers = epicLocations.map(function(location, i) {
-        return new google.maps.Marker({
+    var epic = epicLocations.map(function(location, i) {
+        var epicMarkers = new google.maps.Marker({
             position: location,
-            map:map,
+            map:null,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/orange-circle.png'
-        });
     });
+    markers.push(epicMarkers);
+    return epicMarkers;
+    });
+      
+    
+    
 
-    var markers = collectiveLocations.map(function(location, i) {
-        return new google.maps.Marker({
+    var collective = collectiveLocations.map(function(location, i) {
+        var markers = new google.maps.Marker({
             position: location,
             map:map,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/wht-circle.png'
         });
     });
 
-    var markers = ikonLocations.map(function(location, i) {
+    var ikon = ikonLocations.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
             map:map,
             icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-circle.png'
         });
     });
+     
 }
-    
+
 $(document).ready(function(){
   $("#epic-btn").click(function(){
     $("#epic-container").toggle();
@@ -165,3 +174,24 @@ $(document).ready(function(){
 		});
     });
     });
+
+        
+      
+    
+
+function toggleMarker() {
+    var e = document.getElementById("epic-btn");
+    if (e.classList.contains('epic-pressed'))
+    {
+        show = null;
+    }
+    else 
+    {
+        show = map;
+        console.log("Hello world!");
+    }
+    for (var i = 0; i < markers.length; i++) {
+		markers[i].setMap(show);
+    };
+};
+

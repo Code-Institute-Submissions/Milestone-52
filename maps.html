@@ -20,7 +20,7 @@
                 <button class="btn btn-lg dropdown-toggle map-menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <h3 class="text-center pt-2">Map Options</h3>
-                    <button id="epic-btn" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
+                    <button id="epic-btn" onclick="toggleMarker()" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
                     <button id="collective-btn" class="dropdown-item bg-transparent collective-btn" type="button">Show Collective Mountains</button>
                     <button id="ikon-btn" class="dropdown-item bg-transparent ikon-btn" type="button">Show Ikon Mountains</button>
                     <h3 class="text-center pt-2">Site Navigation</h3>
@@ -272,5 +272,6 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
 </body>
 </html>
