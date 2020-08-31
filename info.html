@@ -14,171 +14,141 @@
 
 </head>
 <body>
-    <div class="container-fluid info-header-background p-0">
-        <div class="row">
-            <div class="col-6">
-                <button class="btn btn-lg mt-3 bg-transparent" type="button" aria-haspopup="true" aria-expanded="false"><a href="index.html" class="map-menu-btn">Ski Village</a></button>
-            </div>
-            <div class="col-6">
-                <div class="d-flex justify-content-end align-items-start">
-                    <div class="btn-group dropleft">
-                        <button class="btn shadow-none menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a><i class="fas fa-bars info-menu-icon mt-2 mr-3 mb-2" aria-hidden="true"></i></a>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <a class="dropdown-item bg-transparent home-btn" type="button" href="index.html">Home</a>
-                            <a class="dropdown-item bg-transparent burger-menu-links" type="button" href="maps.html">Map Comparison</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="d-flex flex-row justify-content-around mt-3 mb-3">
-                                <div class="map-social-icon">
-                                    <a target="_blank" href="https://www.facebook.com/">
-                                    <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                    </a>
-                                </div>
-                                <div class="map-social-icon">
-                                <a target="_blank" href="https://www.twitter.com/">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                                </a>
-                                </div>
-                                <div class="map-social-icon">
-                                <a target="_blank" href="https://www.instagram.com/">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                                </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>               
-                </div>    
+<div class="info-header-background">
+    <div class="dropdown">
+        <button class="btn btn-lg dropdown-toggle map-menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page Options</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <h3 class="text-center pt-2">Map Options</h3>
+            <button id="epic-btn" onclick="toggleEpic()" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
+            <button id="collective-btn" onclick="toggleCollective()" class="dropdown-item bg-transparent collective-btn" type="button">Show Collective Mountains</button>
+            <button id="ikon-btn" onclick="toggleIkon()" class="dropdown-item bg-transparent ikon-btn" type="button">Show Ikon Mountains</button>
+            <h3 class="text-center pt-2">Site Navigation</h3>
+            <a class="dropdown-item bg-transparent home-btn" type="button" href="index.html">Home</a>
+            <a class="dropdown-item bg-transparent burger-menu-links" type="button" href="maps.html">Map Comparison</a>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex flex-row justify-content-around mt-3 mb-3">
+                <div class="map-social-icon">
+                    <a target="_blank" href="https://www.facebook.com/">
+                    <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                    </a>
+                </div>
+                <div class="map-social-icon">
+                    <a target="_blank" href="https://www.twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                    </a>
+                </div>
+                <div class="map-social-icon">
+                    <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                    </a>
+                </div>  
             </div>
         </div>
-        <section>
-            <div class="info-container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex flex-column align-items-center">
-                            <h2><strong>SEASON PASSES:</strong></h2>
-                            <hr class="rounded full-width-rounded mb-2">
-                        </div>
-                    </div>    
+    </div>
+    <section class="container-fluid info-container">
+        <div class="info-columns">
+            <div class="row info-row align-items-center mt-5">
+                <div class="text-center align-items-center p-2 m-5">
+                    <h1>Prices</h1>
                 </div>
-                <div class="row list-groups">
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description1 text-center"><h4>Epic Pass</h4></li>
-                            <li class="list-group-item pass-description1">Unrestricted access to 34 North American resorts</li>
-                            <li class="list-group-item pass-description1">Access to 24 additional international and North American resorts </li>
-                            <li class="list-group-item pass-description1">No blackout dates</li>
-                            <li class="list-group-item pass-description1 text-center list-group-price">$979</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description1 text-center lg-view"><h4>Mountain Collective</h4></li>
-                            <li class="list-group-item pass-description1 text-center sm-view"><h4>Mt. Collective</h4></li>
-                            <li class="list-group-item pass-description1">Restricted access to 17 North American resorts</li>
-                            <li class="list-group-item pass-description1">Access to 6 additional international resorts leading to 46 days total</li>
-                            <li class="list-group-item pass-description1">No blackout dates</li>
-                            <li class="list-group-item pass-description1 text-center list-group-price">$469</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description1 text-center"><h4>Ikon Pass</h4></li>
-                            <li class="list-group-item pass-description1">Unrestricted access to 15 North American resorts</li>
-                            <li class="list-group-item pass-description1">Access to 27 additional international and North American resorts</li>
-                            <li class="list-group-item pass-description1">No blackout dates</li>
-                            <li class="list-group-item pass-description1 text-center list-group-price">$1049</li>
-                        </ul>
-                    </div>
-                </div>           
-            </div>
-        </section>
-           <section>
-            <div class="info-container2">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex flex-column align-items-center">
-                            <h2><strong>SEASON PASSES:</strong></h2>
-                            <hr class="rounded full-width-rounded mb-2">
-                        </div>
-                    </div>    
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Epic Pass</h2>
+                    <p class="price"> $979</p>
                 </div>
-                <div class="row list-groups">
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description2 text-center"><h4>Epic Pass</h4></li>
-                            <li class="list-group-item pass-description2">Unrestricted access to 34 North American resorts</li>
-                            <li class="list-group-item pass-description2">Access to 24 additional international and North American resorts </li>
-                            <li class="list-group-item pass-description2">No blackout dates</li>
-                            <li class="list-group-item pass-description2 text-center list-group-price">$979</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description2 text-center lg-view"><h4>Mountain Collective</h4></li>
-                            <li class="list-group-item pass-description2 text-center sm-view"><h4>Mt. Collective</h4></li>
-                            <li class="list-group-item pass-description2">Restricted access to 17 North American resorts</li>
-                            <li class="list-group-item pass-description2">Access to 6 additional international resorts leading to 46 days total</li>
-                            <li class="list-group-item pass-description2">No blackout dates</li>
-                            <li class="list-group-item pass-description2 text-center list-group-price">$469</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description2 text-center"><h4>Ikon Pass</h4></li>
-                            <li class="list-group-item pass-description2">Unrestricted access to 15 North American resorts</li>
-                            <li class="list-group-item pass-description2">Access to 27 additional international and North American resorts</li>
-                            <li class="list-group-item pass-description2">No blackout dates</li>
-                            <li class="list-group-item pass-description2 text-center list-group-price">$1049</li>
-                        </ul>
-                    </div>
-                </div>           
-            </div>
-        </section>
-           <section>
-            <div class="info-container3">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex flex-column align-items-center">
-                            <h2><strong>SEASON PASSES:</strong></h2>
-                            <hr class="rounded full-width-rounded mb-2">
-                        </div>
-                    </div>    
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Mt. Collective</h2>
+                    <p class="price">$469</p>
                 </div>
-                <div class="row list-groups">
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description3 text-center"><h4>Epic Pass</h4></li>
-                            <li class="list-group-item pass-description3">Unrestricted access to 34 North American resorts</li>
-                            <li class="list-group-item pass-description3">Access to 24 additional international and North American resorts </li>
-                            <li class="list-group-item pass-description3">No blackout dates</li>
-                            <li class="list-group-item pass-description3 text-center list-group-price">$979</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description3 text-center lg-view"><h4>Mountain Collective</h4></li>
-                            <li class="list-group-item pass-description3 text-center sm-view"><h4>Mt. Collective</h4></li>
-                            <li class="list-group-item pass-description3">Restricted access to 17 North American resorts</li>
-                            <li class="list-group-item pass-description3">Access to 6 additional international resorts leading to 46 days total</li>
-                            <li class="list-group-item pass-description3">No blackout dates</li>
-                            <li class="list-group-item pass-description3 text-center list-group-price">$469</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <ul class="list-group list-details">
-                            <li class="list-group-item pass-description3 text-center"><h4>Ikon Pass</h4></li>
-                            <li class="list-group-item pass-description3">Unrestricted access to 15 North American resorts</li>
-                            <li class="list-group-item pass-description3">Access to 27 additional international and North American resorts</li>
-                            <li class="list-group-item pass-description3">No blackout dates</li>
-                            <li class="list-group-item pass-description3 text-center list-group-price">$1049</li>
-                        </ul>
-                    </div>
-                </div>           
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Ikon Pass</h2>
+                    <p class="price">$1049</p>
+                </div>
             </div>
-        </section>
-    </div>    
+        </div>
+
+         <div class="info-columns">
+            <div class="row info-row align-items-center mt-5">
+                <div class="text-center align-items-center p-2 m-5">
+                    <h1>Prices</h1>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Epic Pass</h2>
+                    <p class="price"> $979</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Mt. Collective</h2>
+                    <p class="price">$469</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Ikon Pass</h2>
+                    <p class="price">$1049</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="info-columns">
+            <div class="row info-row align-items-center mt-5">
+                <div class="text-center align-items-center p-2 m-5">
+                    <h1>Prices</h1>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Epic Pass</h2>
+                    <p class="price"> $979</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Mt. Collective</h2>
+                    <p class="price">$469</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Ikon Pass</h2>
+                    <p class="price">$1049</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="info-columns">
+            <div class="row info-row align-items-center mt-5">
+                <div class="text-center align-items-center p-2 m-5">
+                    <h1>Prices</h1>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Epic Pass</h2>
+                    <p class="price"> $979</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Mt. Collective</h2>
+                    <p class="price">$469</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Ikon Pass</h2>
+                    <p class="price">$1049</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="info-columns">
+            <div class="row info-row align-items-center mt-5">
+                <div class="text-center align-items-center p-2 m-5">
+                    <h1>Prices</h1>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Epic Pass</h2>
+                    <p class="price"> $979</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Mt. Collective</h2>
+                    <p class="price">$469</p>
+                </div>
+                <div class="col-lg-3 info-row-section text-center p-2 m-3">
+                    <h2>Ikon Pass</h2>
+                    <p class="price">$1049</p>
+                </div>
+            </div>
+        </div>
+    </section>             
+</div>        
 </body>
 </html>

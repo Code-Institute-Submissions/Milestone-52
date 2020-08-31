@@ -72,7 +72,6 @@ html, body {
 }
 
 .list-details{
-    
     border-radius:25px;
     margin-bottom:10px;
     overflow:hidden;
@@ -415,7 +414,7 @@ a:not([href]) {
 
 /*---------- General Info Comparison ----------*/
 .info-header-background {
-    background-image:url("../images/bluediamond.jpg");
+    background: url("../images/mountain2.jpg"); 
     background-position:center;
     background-repeat:no-repeat;
     -webkit-background-size: cover;
@@ -424,109 +423,38 @@ a:not([href]) {
     background-size: cover;
     height:100vh;
     max-width:100vw;
-    border-bottom:10px solid rgb(43, 83, 196);
-}
-
-.info-menu-icon{
-    font-size:4vw;
-    color:rgb(229, 233, 3);
-    font-weight:bold;
-    top: 0;
-    border:solid 4px rgb(43, 83, 196);
-    border-radius:15px;
-    padding:3px 7px 3px 7px;
+    background-attachment: fixed;
 }
 
 .info-container{
-    background-color:rgb(255, 104, 98);
-    width:100vw;
-    padding:0;
+    font-family:'Oswald', sans-serif;
+    background-color:rgba(255, 103, 98, 0.452);
 }
+.info-row{
+    
+    }
 
-.info-container h2{
-    font-family: 'Oswald', sans-serif;
-    color:white;
+.info-row h2{
     font-size:50px;
-    margin-bottom:15px;
+    font-weight:bold;
+    color:white;
+    border-bottom:2px solid white;
 }
 
-.full-width-rounded{
-    width:100%;
-    height:5px;
-    background-color:rgb(229, 233, 3);
-    margin:0;
+.info-row h1{
+    font-size:100px;
+    color:white;
+    font-weight:bold;
 }
 
-.list-groups{
-    margin-top:10px;
+.price{
+    color:white;
+    font-size:100px;
 }
 
-.list-details{
+.info-row-section{
+    background:rgb(255, 104, 98);
     border-radius:25px;
-    margin-bottom:10px;
-    overflow:hidden;
-    padding-bottom:10px;   
-}
-
-.list-group h4{
-    font-size:30px;
-    font-weight:bold;
-    border-bottom:2px solid rgb(229, 233, 3);
-}
-
-.pass-description1{
-    background-color:rgb(236, 97, 92);
-    border-bottom:none;
-    color:white;
-    font-weight:bold;
-    font-size:20px;
-}
-
-.pass-description2{
-    background-color:rgb(238, 235, 235);
-    border-bottom:none;
-    color:rgb(43, 83, 196);
-    font-weight:bold;
-    font-size:20px;
-}
-
-.pass-description3{
-    background-color:rgb(27, 62, 160);
-    border-bottom:none;
-    color:white;
-    font-weight:bold;
-    font-size:20px;
-}
-
-.list-group-price{
-    font-size:30px;
-    font-weight:bold;
-}
-
-.info-container2{
-    background-color:white;
-    width:100vw;
-    padding:0;
-}
-
-.info-container2 h2{
-    font-family: 'Oswald', sans-serif;
-    color:rgb(43, 83, 196);
-    font-size:50px;
-    margin-bottom:15px;
-}
-
-.info-container3{
-    background-color:rgb(31, 72, 182);
-    width:100vw;
-    padding:0;
-}
-
-.info-container3 h2{
-    font-family: 'Oswald', sans-serif;
-    color:white;
-    font-size:50px;
-    margin-bottom:15px;
 }
 /*---------- Media Queries ----------*/
 

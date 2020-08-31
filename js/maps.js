@@ -3,6 +3,7 @@ let emarkers = [];
 let cmarkers = [];
 let imarkers = [];
 
+// Google Map // 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom:4,
@@ -101,6 +102,7 @@ function initMap() {
         {lat: 46.2096, lng: -74.5853}
     ];
 
+// Push Markers //
     var epic = epicLocations.map(function(location, i) {
         var epicMarkers = new google.maps.Marker({
             position: location,
@@ -111,9 +113,6 @@ function initMap() {
          return epicMarkers;
     });
       
-    
-    
-
     var collective = collectiveLocations.map(function(location, i) {
         var collectiveMarkers = new google.maps.Marker({
             position: location,
@@ -135,6 +134,7 @@ function initMap() {
     });
 }
 
+// Toggle Mountain Lists and Button Color//
 $(document).ready(function(){
   $("#epic-btn").click(function(){
     $("#epic-container").toggle();
@@ -180,6 +180,7 @@ $(document).ready(function(){
     });
     });
 
+// Toggle Markers On and Off Map //    
 function toggleEpic() {
     var e = document.getElementById("epic-btn");
     if (e.classList.contains('epic-pressed'))
