@@ -426,17 +426,40 @@ a:not([href]) {
     background-attachment: fixed;
 }
 
+.info-menu-icon{
+    font-size:4vw;
+    color:rgb(229, 233, 3);
+    font-weight:bold;
+    top: 0;
+    border:solid 4px rgb(43, 83, 196);
+    border-radius:15px;
+    padding:3px 7px 3px 7px;
+}
+
 .info-container{
     font-family:'Oswald', sans-serif;
-    background-color:rgba(255, 103, 98, 0.452);
 }
-.info-row{
-    
-    }
+
+.pink-columns{
+    background-color:rgba(255, 103, 98, 0.452);
+    border:10px solid rgb(255, 104, 98);
+    border-radius:25px;
+}
+
+.blue-columns{
+    background-color:rgba(43, 84, 196, 0.5);
+    border:10px solid rgb(43, 83, 196);
+    border-radius:25px;
+}
+
+.white-columns{
+    background-color:rgba(255, 255, 255, 0.473);
+    border:10px solid white;
+    border-radius:25px;
+}
 
 .info-row h2{
     font-size:50px;
-    font-weight:bold;
     color:white;
     border-bottom:2px solid white;
 }
@@ -452,9 +475,54 @@ a:not([href]) {
     font-size:100px;
 }
 
-.info-row-section{
+.pink-row-section{
     background:rgb(255, 104, 98);
     border-radius:25px;
+}
+
+.blue-row-section{
+    background:rgb(43, 83, 196);
+    border-radius:25px;
+}
+
+.white-row-section{
+    background:white;
+    border-radius:25px;
+}
+
+.white-row h2{
+    font-size:50px;
+    color:rgb(43, 83, 196);
+    border-bottom:2px solid rgb(43, 83, 196);
+}
+
+.white-row h1{
+    font-size:100px;
+    color:rgb(43, 83, 196);
+    font-weight:bold;
+}
+
+.blue-text{
+    font-size:100px;
+    color:rgb(43, 83, 196);
+}
+
+.white-text-li{
+    background-color:transparent;
+    border-bottom:none;
+    font-weight:bold;
+    font-size:30px;
+    border:none;
+    color:white;
+}
+
+.white-text-li:hover{
+    color:#818181;
+    text-decoration:none;
+}
+
+ul {
+    list-style-type: none;
 }
 /*---------- Media Queries ----------*/
 
