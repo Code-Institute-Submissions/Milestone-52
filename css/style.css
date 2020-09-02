@@ -446,42 +446,27 @@ a:not([href]) {
     border-radius:25px;
 }
 
-.blue-columns{
-    background-color:rgba(43, 84, 196, 0.5);
-    border:10px solid rgb(43, 83, 196);
-    border-radius:25px;
-}
-
-.white-columns{
-    background-color:rgba(255, 255, 255, 0.473);
-    border:10px solid white;
-    border-radius:25px;
-}
-
-.info-row h2{
-    font-size:50px;
-    color:white;
-    border-bottom:2px solid white;
-}
-
-.info-row h1{
-    font-size:100px;
-    color:white;
-    font-weight:bold;
-}
-
-.price{
-    color:white;
-    font-size:100px;
-}
-
 .pink-row-section{
     background:rgb(255, 104, 98);
     border-radius:25px;
 }
 
-.blue-row-section{
-    background:rgb(43, 83, 196);
+.pink-columns h1{
+    color:white;
+    font-size:100px;
+    font-weight:bold;
+}
+
+.pink-row-section h2{
+    font-size:50px;
+    color:white;
+    border-bottom:2px solid white;
+}
+
+
+.white-columns{
+    background-color:rgba(255, 255, 255, 0.473);
+    border:10px solid white;
     border-radius:25px;
 }
 
@@ -490,21 +475,16 @@ a:not([href]) {
     border-radius:25px;
 }
 
-.white-row h2{
-    font-size:50px;
-    color:rgb(43, 83, 196);
-    border-bottom:2px solid rgb(43, 83, 196);
-}
-
-.white-row h1{
+.white-columns h1{
     font-size:100px;
     color:rgb(43, 83, 196);
     font-weight:bold;
 }
 
-.blue-text{
-    font-size:100px;
+.white-columns h2{
+    font-size:50px;
     color:rgb(43, 83, 196);
+    border-bottom:2px solid rgb(43, 83, 196);
 }
 
 .white-text-li{
@@ -521,9 +501,57 @@ a:not([href]) {
     text-decoration:none;
 }
 
-ul {
+.blue-text-li{
+    background-color:transparent;
+    border-bottom:none;
+    font-weight:bold;
+    font-size:30px;
+    border:none;
+    color:rgb(43, 83, 196);
+}
+
+.blue-text-li:hover{
+    color:#818181;
+    text-decoration:none;
+}
+
+ul{
     list-style-type: none;
 }
+
+.price{
+    color:white;
+    font-size:100px;
+}
+
+.blue-columns{
+    background-color:rgba(43, 84, 196, 0.5);
+    border:10px solid rgb(43, 83, 196);
+    border-radius:25px;
+}
+
+.blue-columns h1{
+    font-size:100px;
+    color:white;
+    font-weight:bold;
+}
+
+.blue-columns h2{
+    font-size:50px;
+    color:white;
+    border-bottom:2px solid white;
+}
+
+.blue-row-section{
+    background:rgb(43, 83, 196);
+    border-radius:25px;
+}
+
+.blue-text{
+    font-size:100px;
+    color:rgb(43, 83, 196);
+}
+
 /*---------- Media Queries ----------*/
 
 @media (max-width: 414px) {
