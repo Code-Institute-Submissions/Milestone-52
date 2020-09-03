@@ -453,7 +453,7 @@ a:not([href]) {
 
 .pink-columns h1{
     color:white;
-    font-size:100px;
+    font-size:5vw;
     font-weight:bold;
 }
 
@@ -476,7 +476,7 @@ a:not([href]) {
 }
 
 .white-columns h1{
-    font-size:100px;
+    font-size:7vw;
     color:rgb(43, 83, 196);
     font-weight:bold;
 }
@@ -540,7 +540,7 @@ ul{
 }
 
 .blue-columns h1{
-    font-size:100px;
+    font-size:5vw;
     color:white;
     font-weight:bold;
 }
@@ -554,11 +554,6 @@ ul{
 .blue-row-section{
     background:rgb(43, 83, 196);
     border-radius:25px;
-}
-
-.blue-text{
-    font-size:100px;
-    color:rgb(43, 83, 196);
 }
 
 /*---------- Media Queries ----------*/
