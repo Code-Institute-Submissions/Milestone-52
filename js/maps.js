@@ -225,3 +225,12 @@ function toggleIkon() {
 		imarkers[i].setMap(show);
     };
 };
+
+// Scroll to top button
+$('.topBtn').click(function(){
+    $('html, body').animate({
+        scrollTop: $('#topofthePage').offset().top
+    }, 1000);
+});    
+
+    
