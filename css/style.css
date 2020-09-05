@@ -170,31 +170,19 @@ a:not([href]) {
     background-size: cover;
     height:100vh;
     max-width:100vw;
-    border-bottom:10px solid rgb(43, 83, 196);
 }
 
-.iframe-container{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-}
-
-.iframe{
-    border:5px white solid;
-    border-radius:20px;
+.map-container{
+    width:100%;
+    height:100%;
 }
 
 #map{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    padding: 0;
     height: 70%;
     width: 75%;
+    margin:auto;
+    border:5px solid white;
+    margin-bottom:20px;
 }
 
 .map-header a{
@@ -203,12 +191,13 @@ a:not([href]) {
     font-family:'Black Han Sans', sans-serif;
     text-decoration:none;
 }
+
 /*---------- Home Menu ----------*/
 
 .map-menu-btn{
     background-color:transparent;
     font-family:'Black Han Sans', sans-serif;
-    font-size:50px;
+    font-size:30px;
     color:rgb(229, 233, 3);
 }
 
@@ -233,7 +222,7 @@ a:not([href]) {
 }
 
 .dropdown-item{
-    font-size:50px;
+    font-size:30px;
 }
 
 .dropdown-menu{
@@ -244,12 +233,27 @@ a:not([href]) {
 .home-btn{
     font-family:'Oswald', sans-serif;
     color:rgb(229, 233, 3);
+    font-size:30px;
 }
 
 .home-btn:hover{
     color:#818181;
 }
 
+.social-icon{
+    border:none;
+}
+
+.map-social-icon i{
+    font-size: 30px;
+    color:white;
+}
+
+.map-social-icon i:hover{
+    color:#818181;
+}
+
+/*---------- Map Options Menu ----------*/
 .epic-btn{
     background-color:rgb(43, 83, 196);
     font-family:'Oswald', sans-serif;
@@ -298,19 +302,7 @@ a:not([href]) {
     color:#818181;
 }
 
-.social-icon{
-    border:none;
-}
-
-.map-social-icon i{
-    font-size: 50px;
-    color:white;
-}
-
-.map-social-icon i:hover{
-    color:#818181;
-}
-
+/*---------- Map Page Mountain Lists ----------*/
 .pass-title{
     display:inline-block;
     height:75px;
@@ -328,9 +320,10 @@ a:not([href]) {
 }
 
 .epic-container{
-    height:100%;
+    height:auto;
     background-color:rgb(255, 104, 98);
     display:none;
+    border-bottom:2px solid rgb(255, 104, 98);
 }
 
 .epic-container a{
@@ -364,7 +357,7 @@ a:not([href]) {
 }
 
 .collective-container{
-    height:100%;
+    height:auto;
     background-color:white;
     display:none;
     border-bottom:2px solid rgb(43, 83, 196);
@@ -389,9 +382,10 @@ a:not([href]) {
 }
 
 .ikon-container{
-    height:100%;
+    height:auto;
     background-color:rgb(43, 83, 196);
     display:none;
+    border-bottom:2px solid rgb(43, 83, 196);
 }
 
 .ikon-container h1{
@@ -429,7 +423,7 @@ a:not([href]) {
 .info-home-btn{
     background-color:transparent;
     font-family:'Black Han Sans', sans-serif;
-    font-size:50px;
+    font-size:30px;
     color:rgb(229, 233, 3);
 }
 
@@ -574,11 +568,12 @@ ul{
 
 #topBtn{
     color:rgb(229, 233, 3);
-    background:none;
+    background:rgba(43, 84, 196, 0.418);
     font-size:50px;
-    background:transparent;
-    border:none;
+    border:5px solid rgb(43, 83, 196);
+    border-radius:15px;
     text-decoration:none;
+    padding:0 15px 0 15px;
 }
 #topBtn:hover {
   color: rgb(255, 104, 98);
@@ -606,6 +601,10 @@ button:focus {
 
 @media (max-width: 680px) {
     .info-home-btn{
+        font-size:22px;
+    }
+
+    .map-menu-btn{
         font-size:22px;
     }
 }
@@ -653,10 +652,27 @@ button:focus {
 
 @media screen and (max-width: 1050px) {
     #map{
-        height:95%;
-        width:99%;
+        height:100%;
+        width:100%;
+        border:none;
+        margin-bottom:0;
+    }
+
+    .header-row{
+        background-color:rgb(43, 83, 196);
+        height:60px;
+    }
+
+    .no-show{
+        display:none;
+    }
+
+    .info-burger-icon{
+        font-size:15px;
+        border:solid 4px rgb(229, 233, 3);
     }
 }
+
 
 @media (max-width: 1100px) {
     .lg-view{

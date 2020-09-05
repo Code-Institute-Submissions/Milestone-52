@@ -12,53 +12,67 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <title>Season Pass Map Comparison</title>
 </head>
-<body>
-    <div class="container map-background">
-<!--Dropdown Menu-->    
-        <div class="menu-container">
-            <div class="dropdown">
-                <button class="btn btn-lg dropdown-toggle map-menu-btn mt-2 bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <h3 class="text-center pt-2">Map Options</h3>
-                    <button id="epic-btn" onclick="toggleEpic()" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
-                    <button id="collective-btn" onclick="toggleCollective()" class="dropdown-item bg-transparent collective-btn" type="button">Show Collective Mountains</button>
-                    <button id="ikon-btn" onclick="toggleIkon()" class="dropdown-item bg-transparent ikon-btn" type="button">Show Ikon Mountains</button>
-                    <h3 class="text-center pt-2">Site Navigation</h3>
-                    <a class="dropdown-item bg-transparent home-btn" type="button" href="index.html">Home</a>
-                    <a class="dropdown-item bg-transparent burger-menu-links" type="button" href="info.html">General Info Comparison</a>
-                    <div class="dropdown-divider"></div>
-                    <div class="d-flex flex-row justify-content-around mt-3 mb-3">
-                        <div class="map-social-icon">
-                            <a target="_blank" href="https://www.facebook.com/">
-                            <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                            </a>
-                        </div>
-                        <div class="map-social-icon">
-                            <a target="_blank" href="https://www.twitter.com/">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                            </a>
-                        </div>
-                        <div class="map-social-icon">
-                            <a target="_blank" href="https://www.instagram.com/">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                            </a>
-                        </div>  
+<body class="map-background">
+<!--Dropdown Menu-->
+    <div class="map-container">
+        <div class="row header-row">
+            <div class="col-6 d-flex justify-content-start">
+                <div class="dropdown">
+                    <button class="btn btn-lg dropdown-toggle map-menu-btn bg-transparent mt-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <h3 class="text-center pt-2">Map Options</h3>
+                        <button id="epic-btn" onclick="toggleEpic()" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
+                        <button id="collective-btn" onclick="toggleCollective()" class="dropdown-item bg-transparent collective-btn" type="button">Show Collective Mountains</button>
+                        <button id="ikon-btn" onclick="toggleIkon()" class="dropdown-item bg-transparent ikon-btn" type="button">Show Ikon Mountains</button>
                     </div>
-                </div>
-            </div>   
-        </div>        
+                </div>   
+            </div>
+            <div class="col-6 ">
+                <div class="d-flex justify-content-end ml-auto">
+                    <div class="btn-group dropleft">
+                        <button class="btn shadow-none bg-transparent menu-btn mt-2 pb-5" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a><i class="fas fa-bars info-burger-icon" aria-hidden="true"></i></a>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                            <a class="dropdown-item bg-transparent home-btn" type="button" href="index.html">Home</a>
+                            <a class="dropdown-item bg-transparent burger-menu-links" type="button" href="info.html">General Info Comparison</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex flex-row justify-content-around mt-3 mb-3">
+                                <div class="map-social-icon">
+                                    <a target="_blank" href="https://www.facebook.com/">
+                                    <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="map-social-icon">
+                                    <a target="_blank" href="https://www.twitter.com/">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                    </a>
+                                </div>
+                                <div class="map-social-icon">
+                                    <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                    </a>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>               
+                </div>    
+            </div>
+        </div>         
 <!-- Google Map -->
-        <div class="iframe-container">
-            <div class="iframe mt-2" id="map"></div> 
-        </div>
-    </div>              
+        <div id="map"></div>
+            
+        
+            
+
+                 
 <!-- Pass Lists -->
-        <div id="epic-container" class="container-fluid epic-container">
-            <div class="row text-center">
-                <div class="col-6">
+        <div class="no-show">
+        <div id="epic-container" class="epic-container">
+            <div class="row">
+                <div class="col-12 text-center">
                     <h1><strong>EPIC PASS</strong></h1>
                     <hr class="rounded epic-rounded">
                 </div>
@@ -125,8 +139,8 @@
             </div>
         </div>
         <div id="collective-container" class="container-fluid collective-container">
-            <div class="row text-center">
-                <div class="col-12">
+            <div class="row">
+                <div class="col-12 text-center">
                     <h1><strong>MOUNTAIN COLLECTIVE</strong></h1>
                     <hr class="rounded collective-rounded">
                 </div>
@@ -176,8 +190,8 @@
             </div>
         </div>
         <div id="ikon-container" class="container-fluid ikon-container">
-            <div class="row text-center">
-                <div class="col-12">
+            <div class="row">
+                <div class="col-12 text-center">
                     <h1><strong>IKON PASS</strong></h1>
                     <hr class="rounded ikon-rounded">
                 </div>
@@ -243,32 +257,10 @@
                     </ul>
                 </div>
             </div>
-        </div>         
-<section>
-        <div class="footer-element">
-            <div class="d-flex flex-row justify-content-lg-end justify-content-center pt-3">
-                <div class="footer-element social-tag mr-auto"><p class="ml-2">Follow us on social media for flash sales and discounts</p></div>
-                <div class="footer-element social-icon">
-                    <a target="_blank" href="https://www.facebook.com/">
-                        <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </div>
-                <div class="footer-element social-icon">
-                    <a target="_blank" href="https://www.twitter.com/">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                </div>
-                <div class="footer-element social-icon">
-                    <a target="_blank" href="https://www.instagram.com/">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </div>  
-            </div>  
         </div>
-    </section>
+        </div>
+    </div>          
+    
 <!-- Google Map Script -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
 </script>

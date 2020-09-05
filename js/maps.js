@@ -8,9 +8,11 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom:4,
         center:{lat:39.8097,lng:-98.5556},
-        gestureHandling: 'cooperative'
+        gestureHandling: 'cooperative',
+        streetViewControl: false,
+        mapTypeControl: false
     });
-
+    
     var epicLocations = [
         {lat: 38.6848, lng: -120.0652},
         {lat: 38.9353, lng: -119.9399},
@@ -232,5 +234,4 @@ $('.topBtn').click(function(){
         scrollTop: $('#topofthePage').offset().top
     }, 1000);
 });    
-
-    
+  
