@@ -17,9 +17,10 @@
 <!--Dropdown Menu-->
     <div class="map-container">
         <div class="row map-header">
-            <div class="col-6 d-flex justify-content-start">
-                <div class="dropdown">
-                    <button class="btn btn-lg dropdown-toggle map-menu-btn bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
+            <div class="col-6">
+                <button class="btn btn-lg bg-transparent" type="button" aria-haspopup="true" aria-expanded="false"><a href="index.html" class="info-home-btn ski-village-btn">Ski Village</a></button>
+                <div class="dropdown d-flex justify-content-start">
+                    <button class="btn btn-lg dropdown-toggle map-menu-btn bg-transparent " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Map Options</button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <h3 class="text-center pt-2">Map Options</h3>
                         <button id="epic-btn" onclick="toggleEpic()" class="dropdown-item bg-transparent epic-btn" type="button">Show Epic Mountains</button>
@@ -62,13 +63,14 @@
                 </div>    
             </div>
         </div>         
-<!-- Google Map -->
+<!-- Google Map and Buttons -->
+        <div class="map-buttons d-flex justify-content-center">
+            <button id="epic-button" onclick="toggleE()" type="button" class="btn btn-lg map-control epic-button m-2">Show Epic</button>
+            <button id="collective-button" onclick="toggleC()" type="button" class="btn btn-lg map-control collective-button m-2">Show Collective</button>
+            <button id="ikon-button" onclick="toggleI()" type="button" class="btn btn-lg map-control ikon-button m-2">Show Ikon</button>
+        </div>
         <div id="map"></div>
-            
-        
-            
-
-                 
+           
 <!-- Pass Lists -->
         <div class="no-show">
         <div id="epic-container" class="container-fluid epic-container">
