@@ -16,10 +16,14 @@ html, body {
     background-size: cover;
     height:100vh;
     max-width:100vw;
-    border-bottom:10px solid rgb(43, 83, 196);
 }
 
 /*---------- Header ----------*/
+
+.header-container{
+    width:100vw;
+    height:100vh;
+}
 
 .header-container h1, h2{
     font-family: 'Black Han Sans', sans-serif;
@@ -44,14 +48,34 @@ html, body {
     border-radius:15px;
     padding:3px 7px 3px 7px;
     background:rgba(43, 84, 196, 0.466);
+    float:right;
 }
 
+.icon-container h4{
+    font-family: 'Oswald', sans-serif;
+    color:rgb(43, 83, 196);
+}
 
+.icon-container a{
+    text-decoration:none !important;
+}
+
+.map-icon{
+    content:url("../images/mapicon.png");
+    height:75px;
+    width:75px;  
+}
 /*---------- Season Passes ----------*/
+.full-width{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 104, 98);
+}
 
 .passes-container{
     background-color:rgb(43, 83, 196);
-    position:relative;
 }
 
 .passes-container h2{
@@ -101,8 +125,7 @@ html, body {
 
 .callout-container{
     background-color:rgb(255, 104, 98);
-    height:380px;
-    position:relative;
+    height:390px;   
 }
 
 .callout-icon{
@@ -669,7 +692,7 @@ ul{
 }
 
 #topBtn{
-    color:rgb(229, 233, 3);
+    color:white;
     background:rgba(43, 84, 196, 0.418);
     font-size:50px;
     border:5px solid rgb(43, 83, 196);
@@ -701,9 +724,9 @@ button:focus {
     }
 }
 
-@media (max-width: 900px) {
-     .header-container h1{
-    font-size:15vw;
+@media (max-width: 1200px) {
+    .header-container h1{
+    font-size:12vw;
     }
 
     .header-container h2{
@@ -724,6 +747,10 @@ button:focus {
 @media (max-width: 991px) {
     .callout-container{
         display:none;
+    }
+
+    .full-width{
+        background-color:rgb(43, 83, 196);
     }
 }
 
