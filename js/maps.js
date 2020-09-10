@@ -6,7 +6,7 @@ let imarkers = [];
 // Google Map // 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom:4,
+        zoom:3,
         center:{lat:39.8097,lng:-98.5556},
         gestureHandling: 'cooperative',
         streetViewControl: false,
