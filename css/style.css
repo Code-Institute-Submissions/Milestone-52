@@ -121,7 +121,6 @@ html, body {
 
 .list-details{
     border-radius:25px;
-    margin-bottom:10px;
     overflow:hidden;
     padding-bottom:10px;   
 }
@@ -144,6 +143,23 @@ html, body {
     font-size:30px;
     font-weight:bold;
 }
+
+.btn-block{
+    background-color:rgb(31, 72, 182);
+    width:60%;
+    border:2px solid rgb(229, 233, 3);
+    border-radius:25px;
+    color:white;
+    font-size:4vw;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-block:hover{
+    background-color:rgb(229, 233, 3);
+    text-decoration:none;
+}
+
 /*---------- Callout ----------*/
 
 .callout-container{
@@ -311,10 +327,10 @@ a:not([href]) {
 }
 
 .epic-button{
-    border:5px solid rgb(255, 104, 98);
+    border:5px solid rgb(43, 83, 196);
     border-radius:25px;
     color:white;
-    background-color:rgba(255, 103, 98, 0.445);
+    background-color:rgba(43, 84, 196, 0.425);
     width:25vw;
     height:10vh;
     font-weight: bold;
@@ -325,25 +341,25 @@ a:not([href]) {
 }
 
 .epic-button:hover{
-    color:rgb(255, 104, 98);
+    color:rgb(43, 83, 196);
 }
 
 .epic-button-pressed{
-    background-color:#81818171;
+    background-color:rgba(255, 103, 98, 0.438);
     font-family:'Oswald', sans-serif;
-    color:white;
-    border:5px solid #818181;
+    color:rgb(252, 83, 77);
+    border:5px solid rgb(252, 83, 77);
 }
 
 .epic-button-pressed:hover{
-    color:rgb(83, 83, 83);
+    color:rgb(252, 83, 77);
 }
 
 .collective-button{
-    border:5px solid white;
+    border:5px solid rgb(43, 83, 196);
     border-radius:25px;
-    color:rgb(43, 83, 196);
-    background-color:rgba(255, 255, 255, 0.445);
+    color:white;
+    background-color:rgba(43, 84, 196, 0.425);
     width:25vw;
     height:10vh;
     font-weight: bold;
@@ -354,18 +370,18 @@ a:not([href]) {
 }
 
 .collective-button:hover{
-    color:white;
+    color:rgb(43, 83, 196);
 }
 
 .collective-button-pressed{
-    background-color:#81818171;
+    background-color:rgba(255, 255, 255, 0.466);
     font-family:'Oswald', sans-serif;
     color:white;
-    border:5px solid #818181;
+    border:5px solid white;
 }
 
 .collective-button-pressed:hover{
-    color:#838383;
+    color:white;
 }
 
 .ikon-button{
@@ -387,14 +403,12 @@ a:not([href]) {
 }
 
 .ikon-button-pressed{
-    background-color:#81818171;
     font-family:'Oswald', sans-serif;
-    color:white;
-    border:5px solid #818181;
+    color:rgb(43, 83, 196);
 }
 
 .ikon-button-pressed:hover{
-    color:#838383;
+    color:rgb(43, 83, 196);
 }
 
 /*---------- Map Options Menu ----------*/
@@ -758,6 +772,10 @@ button:focus {
 @media (max-width: 1200px) {
     .menu-icon{
     font-size:6vw;
+    }
+
+    .btn-block{
+        font-size:4vw;
     }
 }
 
