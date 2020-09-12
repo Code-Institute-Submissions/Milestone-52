@@ -461,18 +461,6 @@ a:not([href]) {
 }
 
 /*---------- Map Page Mountain Lists ----------*/
-.pass-title{
-    display:inline-block;
-    height:75px;
-    line-height:70px;
-    text-decoration:none;
-    font-family: 'Oswald', sans-serif;
-    color:rgb(229, 233, 3);
-    font-size:4vw;
-    width:23.5%;
-    text-align:center;
-}
-
 .list-groups{
     margin:5px;
 }
