@@ -270,6 +270,11 @@ a:not([href]) {
     display:none;
 }
 
+.map-menu-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .map-menu-btn:hover{
     color:rgb(229, 233, 3);
     text-decoration:none;

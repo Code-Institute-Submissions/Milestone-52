@@ -214,5 +214,6 @@ $('.topBtn').click(function(){
     $('html, body').animate({
         scrollTop: $('#topofthePage').offset().top
     }, 1000);
-});    
+});
+
   
