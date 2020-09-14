@@ -1,4 +1,3 @@
-![Image of desktop view](/images/desktop.png)
 # Ski Village
 ## Season Pass Comparison Tool
 
@@ -45,7 +44,7 @@ Ski Village is a website that lets users compare the three major season passes f
 
 <p align="center"><img src="/images/maplists.png" width="400"></p>
 
-* To improve visibility and ease of usability on mobile devices, the map has been set to take up 100% of the screen. Instead of buttons to toggle markers on and off there is a map options dropdown menu in the top corner.
+* To improve visibility and ease of use on mobile devices, the map has been set to take up 100% of the screen. Instead of buttons to toggle markers on and off there is a "Map Options" dropdown menu in the top corner.
 
 <p align="center"><img src="/images/mobilemenu.png" width="200" height="400"></p>
 

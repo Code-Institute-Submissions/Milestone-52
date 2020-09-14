@@ -13,7 +13,6 @@ function initMap() {
         mapTypeControl: false
     });
 
-    //map.addListener
     function setMarkers(locations, markerArray, icon) {
         let location = locations.map(function(location, i) {
             let marker = new google.maps.Marker({
@@ -57,7 +56,7 @@ $(document).ready(function(){
     });
         $(".epic-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Epic' ? 'Show Epic' : 'Hide Epic'
+		   return v === 'Click Markers For More Info' ? 'Show Epic' : 'Click Markers For More Info'
 		});
     });
     });
@@ -79,7 +78,7 @@ $(document).ready(function(){
     });
   $(".ikon-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Ikon' ? 'Show Ikon' : 'Hide Ikon'
+		   return v === 'Click Markers For More Info' ? 'Show Ikon' : 'Click Markers For More Info'
 		});
     });  
     });
@@ -102,7 +101,7 @@ $(document).ready(function(){
     });
         $(".collective-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Collective' ? 'Show Collective' : 'Hide Collective'
+		   return v === 'Click Markers For More Info' ? 'Show Collective' : 'Click Markers For More Info'
 		});
     });
     });

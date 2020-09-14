@@ -352,8 +352,9 @@ a:not([href]) {
 .epic-button-pressed{
     background-color:rgba(255, 103, 98, 0.438);
     font-family:'Oswald', sans-serif;
-    color:rgb(252, 83, 77);
+    color:white;
     border:5px solid rgb(252, 83, 77);
+    font-size:2vw;
 }
 
 .epic-button-pressed:hover{
@@ -381,8 +382,9 @@ a:not([href]) {
 .collective-button-pressed{
     background-color:rgba(255, 255, 255, 0.466);
     font-family:'Oswald', sans-serif;
-    color:white;
+    color:rgb(43, 83, 196);
     border:5px solid white;
+    font-size:2vw;
 }
 
 .collective-button-pressed:hover{
@@ -409,7 +411,8 @@ a:not([href]) {
 
 .ikon-button-pressed{
     font-family:'Oswald', sans-serif;
-    color:rgb(43, 83, 196);
+    color:white;
+    font-size:2vw;
 }
 
 .ikon-button-pressed:hover{
@@ -731,13 +734,23 @@ ul{
     padding:0 15px 0 15px;
 }
 #topBtn:hover {
-  color: rgb(255, 104, 98);
+    color: rgb(255, 104, 98);
 }
 
 button:focus {
     outline: none;
 }
 
+.buy-now a{
+    color:white;
+    font-size:40px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.buy-now a:hover{
+    color:#818181;
+}
 /*---------- Media Queries ----------*/
 
 @media (max-width: 414px) {
