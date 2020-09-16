@@ -32,9 +32,9 @@ function initMap() {
             return marker;
         });
     }
-    setMarkers(ikonLocationsWithInfoContent, imarkers, 'blu-circle.png' )
-    setMarkers(epicLocationsWithInfoContent, emarkers, 'orange-circle.png')
-    setMarkers(collectiveLocationsWithInfoContent, cmarkers, 'wht-circle.png')
+    setMarkers(ikonLocationsWithInfoContent, imarkers, 'blu-circle.png');
+    setMarkers(epicLocationsWithInfoContent, emarkers, 'orange-circle.png');
+    setMarkers(collectiveLocationsWithInfoContent, cmarkers, 'wht-circle.png');
 }
 
 // Toggle Mountain Lists and Button Color//
@@ -56,7 +56,7 @@ $(document).ready(function(){
     });
         $(".epic-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Click Markers For More Info' ? 'Show Epic' : 'Click Markers For More Info'
+		   return v === 'Click Markers For More Info' ? 'Show Epic' : 'Click Markers For More Info';
 		});
     });
     });
@@ -67,7 +67,7 @@ $(document).ready(function(){
     });
         $(".epic-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Epic Mountains' ? 'Show Epic Mountains' : 'Hide Epic Mountains'
+		   return v === 'Hide Epic Mountains' ? 'Show Epic Mountains' : 'Hide Epic Mountains';
 		});
     });
     });    
@@ -78,7 +78,7 @@ $(document).ready(function(){
     });
   $(".ikon-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Click Markers For More Info' ? 'Show Ikon' : 'Click Markers For More Info'
+		   return v === 'Click Markers For More Info' ? 'Show Ikon' : 'Click Markers For More Info';
 		});
     });  
     });
@@ -90,7 +90,7 @@ $(document).ready(function(){
     });
   $(".ikon-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Ikon Mountains' ? 'Show Ikon Mountains' : 'Hide Ikon Mountains'
+		   return v === 'Hide Ikon Mountains' ? 'Show Ikon Mountains' : 'Hide Ikon Mountains';
 		});
     });  
     });
@@ -101,7 +101,7 @@ $(document).ready(function(){
     });
         $(".collective-button").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Click Markers For More Info' ? 'Show Collective' : 'Click Markers For More Info'
+		   return v === 'Click Markers For More Info' ? 'Show Collective' : 'Click Markers For More Info';
 		});
     });
     });
@@ -112,7 +112,7 @@ $(document).ready(function(){
     });
         $(".collective-btn").click(function(){
 		$(this).text(function(_i, v){
-		   return v === 'Hide Collective Mountains' ? 'Show Collective Mountains' : 'Hide Collective Mountains'
+		   return v === 'Hide Collective Mountains' ? 'Show Collective Mountains' : 'Hide Collective Mountains';
 		});
     });
     });    
@@ -130,8 +130,8 @@ function toggleEpic() {
     }
     for (var i = 0; i < emarkers.length; i++) {
 		emarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 function toggleE() {
     var e = document.getElementById("epic-button");
@@ -145,8 +145,8 @@ function toggleE() {
     }
     for (var i = 0; i < emarkers.length; i++) {
 		emarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 function toggleCollective() {
     var c = document.getElementById("collective-btn");
@@ -160,8 +160,8 @@ function toggleCollective() {
     }
     for (var i = 0; i < cmarkers.length; i++) {
 		cmarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 function toggleC() {
     var e = document.getElementById("collective-button");
@@ -175,8 +175,8 @@ function toggleC() {
     }
     for (var i = 0; i < cmarkers.length; i++) {
 		cmarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 function toggleIkon() {
     var k = document.getElementById("ikon-btn");
@@ -190,8 +190,8 @@ function toggleIkon() {
     }
     for (var i = 0; i < imarkers.length; i++) {
 		imarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 function toggleI() {
     var e = document.getElementById("ikon-button");
@@ -205,8 +205,8 @@ function toggleI() {
     }
     for (var i = 0; i < imarkers.length; i++) {
 		imarkers[i].setMap(show);
-    };
-};
+    }
+}
 
 
   
