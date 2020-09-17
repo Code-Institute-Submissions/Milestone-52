@@ -734,7 +734,7 @@ ul{
     padding:0 15px 0 15px;
 }
 #topBtn:hover {
-    color: rgb(255, 104, 98);
+    color:#818181;
 }
 
 button:focus {
@@ -750,6 +750,21 @@ button:focus {
 
 .buy-now a:hover{
     color:#818181;
+}
+
+.info-map-link{
+    color:white;
+    background-color:rgba(43, 84, 196, 0.466);
+    font-size:3vw;
+    font-family: 'Black Han Sans', sans-serif;
+    border:5px solid rgb(43, 83, 196);
+    border-radius:25px;
+    width:100%;
+}
+
+.info-map-link:hover{
+    color:#818181;
+    text-decoration:none;
 }
 /*---------- Media Queries ----------*/
 

@@ -15,12 +15,10 @@ Ski Village is a website that lets users compare the three major season passes f
 
 * As a first time user, I would like to easily navigate through the sites content.
 
-* As a first time user, the sites organisation should be clear and easily understood.
+* As a first time user, I would like to easily access the website for each resort and season pass for more information.
 
 ##### *Returning Visitors*
 * As a returning visitor, I would like to see up to date information on mountains and prices.
-
-* As a returning visitor, I would like to see new resorts added to the map tool as they become available.
 
 ##### *Frequent Visitors*
 * As a frequent visitor, I would like easy access to the sites social media accounts.
@@ -118,37 +116,86 @@ Ski Village is a website that lets users compare the three major season passes f
 
 ### Frameworks, Libraries & Programs Used
 1. [Bootstrap 4.5.0:](https://getbootstrap.com/) 
-  * Bootstrap was used to assist with the responsiveness and styling of the website.
+   * Bootstrap was used to assist with the responsiveness and styling of the website.
 2. [Google Fonts:](https://fonts.google.com/) 
-  * Google fonts were used to import the "Black Han Sans" and "Oswald" fonts into the style.css file which is used on all pages throughout the project.
+   * Google fonts were used to import the "Black Han Sans" and "Oswald" fonts into the style.css file which is used on all pages throughout the project.
 3. [Font Awesome:](https://fontawesome.com/)
-  * Font Awesome was used on all pages throughout the website to add icons for UX purposes.
+   * Font Awesome was used on all pages throughout the website to add icons for UX purposes.
 4. [jQuery 3.5.1:](https://code.jquery.com/)
-  * The jQuery toggle function was used multiple times throughout this project as well as its scroll to top function.
+   * The jQuery toggle function was used multiple times throughout this project as well as its scroll to top function.
 5. [JavaScript 4.5.2:](https://getbootstrap.com/docs/4.0/getting-started/javascript/) 
-  * The Bootstrap JavaScript bundle was used multiple times throughout this site, primarily for Google Map interaction. 
+   * The Bootstrap JavaScript bundle was used multiple times throughout this site, primarily for Google Map interaction. 
 6. [Google Maps](https://developers.google.com/maps/documentation)
-  * The Google Maps platform was used to access its API and codes for the maps page in this project.
+   * The Google Maps platform was used to access its API and codes for the maps page in this project.
 7. [Git:](https://git-scm.com/)
-  * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Github.
+   * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Github.
 8. [GitHub:](https://github.com/)  
-  * GitHub is used to store the projects code after being pushed from Git.
+   * GitHub is used to store the projects code after being pushed from Git.
 9. [Balsamiq:](https://balsamiq.com/)
-  * Balsamiq was used to create the wireframes during the design process.        
+   * Balsamiq was used to create the wireframes during the design process.        
 ## **Testing**
-* The W3C Markup Validator, W3C CSS Validator Services and JS Hint were used to validate every page of the project to ensure there were no syntax errors in the project. 
+   * The W3C Markup Validator, W3C CSS Validator Services and JS Hint were used to validate every page of the project to ensure there were no syntax errors in the project. 
 # LINK HERE
 
 ### Testing User Stories from UX Section
 **First Time Visitor Goals**
 1. As a first time user, I would like to easily understand the purpose of the site.
-  * Upon entering, users are greeted with an eye grabbing hero image of a skier on a mountain. To the left of the skier is a large header and sub header with the name of the site and a one line description explaining the sites purpose. 
+   * Upon entering, users are greeted with an eye grabbing hero image of a skier on a mountain. To the left of the skier is a large header and sub header with the name of the site and a one line description explaining the sites purpose.
+
+   * The background image of the skier immediately lets the user know the website has to do with skiing/snow sports.
+
+   * The header and sub heading next to the skier tells the exact purpose of the site. 
   
 2. As a first time user, I would like to easily navigate through the sites content.
-* The user then has several options. In the top corner is a hamburger menu icon that navigates around the site, in the bottom corner is a stratigically placed call to action link that will bring visitors to the maps page or they can scroll down for more content and another large button that will bring them to the information page.
 
-3. As a first time user, the sites organisation should be clear and easily understood.
+   * When arriving to the site, the user has several options. In the top corner is a hamburger menu icon that navigates around the site.
 
+   * In the bottom corner of the hero image is a stratigically placed call to action link that will bring visitors to the maps page.
+
+   * Users can also scroll down for more content and another large button that will bring them to the information page to find out more.
+
+   * Each page has a dropdown menu that navigates the site in the same convenient location.
+
+   * Due to the length of the info page, I have placed a "scroll to top" button that will automatically bring you to the top menu when pressed.
+
+   * A button leading to the maps page has also been placed at the bottom of the info page for easy access.
+
+3. As a first time user, I would like to easily access the website for each resort and season pass for more information.
+
+   * On the maps page, each location has an infobox connected to it's marker when clicked. The marker contains a link to that resorts website.
+
+   * On desktop view, when a passes locations are shown on the map a container pops up underneath with a list of all resorts that pass offers. Each line item is an active link to that mountains website.
+
+   * On the information comparison page, an active link has been placed on each mountain name every time it is mentioned.
+
+**Returning Visitors**
+
+1. As a returning visitor, I would like to see up to date information on mountains and prices.
+   * In the footer of each page are links to our social media accounts as well as a callout to follow us for up to date information and sales.
+
+**Frequent Visitors**
+
+1. As a frequent visitor, I would like easy access to the sites social media accounts.
+   * Icons that link to our social media accounts are placed in the footer of each page as well as in the dropdown menu for constant reminders to follow.
+
+2. As a frequent visitor, I would like social media accounts to be up to date with current promotions.
+   * Social media accounts will be continuously updated with new information and sales.
+
+### Further Testing
+
+* The website was tested on Safari, Google Chrome and Firefox browsers.
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone 8 and iPhone X.
+* All the links on the every page were tested on all browsers to ensure they are working properly.
+* Friends and family members were recruited to play on the site and inform me of any changes they felt needed to be made.
+
+### Deployment
+The project was deployed to GitHub Pages using the following steps...
+1. Log in to GitHub and loacte the GitHub Repository.
+2. At the top of the repository, locate the "settings" button on the menu.
+3. Scroll down the settings page until you locate the "GitHub Pages" section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
 
 
