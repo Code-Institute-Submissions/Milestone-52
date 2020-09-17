@@ -1,5 +1,7 @@
+<p align="center"><img src="/images/devices2.png" width="400"></p>
+
+
 # **Ski Village**
-## Season Pass Comparison Tool
 
 ## **Introduction**
 
@@ -100,6 +102,9 @@ Ski Village is a website that lets users compare the three major season passes f
 
 <p align="center"><img src="/images/infopage.png" width="400"></p>
 
+### Wireframes
+# LINK HERE
+
 ## **Features**
 * Responsive on all devices.
 * Interactive Google Map API.
@@ -130,12 +135,19 @@ Ski Village is a website that lets users compare the three major season passes f
   * GitHub is used to store the projects code after being pushed from Git.
 9. [Balsamiq:](https://balsamiq.com/)
   * Balsamiq was used to create the wireframes during the design process.        
+## **Testing**
+* The W3C Markup Validator, W3C CSS Validator Services and JS Hint were used to validate every page of the project to ensure there were no syntax errors in the project. 
+# LINK HERE
 
+### Testing User Stories from UX Section
+**First Time Visitor Goals**
+1. As a first time user, I would like to easily understand the purpose of the site.
+  * Upon entering, users are greeted with an eye grabbing hero image of a skier on a mountain. To the left of the skier is a large header and sub header with the name of the site and a one line description explaining the sites purpose. 
+  
+2. As a first time user, I would like to easily navigate through the sites content.
+* The user then has several options. In the top corner is a hamburger menu icon that navigates around the site, in the bottom corner is a stratigically placed call to action link that will bring visitors to the maps page or they can scroll down for more content and another large button that will bring them to the information page.
 
-
-
-
-
+3. As a first time user, the sites organisation should be clear and easily understood.
 
 
 
