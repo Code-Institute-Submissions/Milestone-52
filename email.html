@@ -9,6 +9,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("user_gbwopAIestVc7SOzXK2hr");
+    })(); 
+    </script>
+
     <title>Enter to win</title>
 </head>
 
@@ -60,22 +67,24 @@
                 <hr class="rounded">
             </div>
         </div>
-        <form class="row" action="" method="">
-            <div class="col-lg-3">
-            <input class="input-field" type="text" placeholder="First Name" id="fname" name="first_name" required>
-            </div>
-            <div class="col-lg-3">
-            <input class="input-field" type="text" placeholder="Last Name" id="lname" name="last_name" required>
-            </div>
-            <div class="col-lg-3">          
-            <input class="input-field" type="email" placeholder="Email Address" id="email" name="email_address" required>
-            </div>
-            <div class="col-lg-3">
-            <input class="input-field" type="text" placeholder="Favorite Mountain" id="favmtn" name="fav_mtn" required>
+        <form id="contest" onsubmit="return sendMail(this);" method="POST" autocomplete="off">
+            <div class="row"> 
+                <div class="col-lg-3">
+                <input class="input-field" type="text" placeholder="Full Name" id="fullname" name="name" required>
+                </div>
+                <div class="col-lg-3">          
+                <input class="input-field" type="email" placeholder="Email Address" id="emailaddress" name="emailaddress" required>
+                </div>
+                <div class="col-lg-3">
+                <input class="input-field" type="text" placeholder="Favorite Mountain" id="favoritemountain" name="favoritemountain" required>
+                </div>
+                <div class="col-3">
+                    <button class="submit-btn text-center" type="submit">Submit</button>
+                </div>
             </div>
         </form>
-    
+        
     </section>
-    
+    <script src="js/sendEmail.js"></script>
 </body>
 </html>

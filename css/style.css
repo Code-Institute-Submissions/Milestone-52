@@ -25,7 +25,7 @@ html, body {
     height:100vh;
 }
 
-.header-container h1, h2{
+.header-container h1, h2, h4{
     font-family: 'Black Han Sans', sans-serif;
 }
 
@@ -37,6 +37,19 @@ html, body {
 .header-container h2{
     color:rgb(43, 83, 196);
     font-size:3vw; 
+}
+
+.win-row{
+    height:25px;
+}
+
+.win{
+    color:rgb(255, 104, 98);
+}
+
+.win:hover{
+    color:#818181;
+    text-decoration:none !important;
 }
 
 .menu-icon{
@@ -806,6 +819,18 @@ input{
     border:none;
     border-radius:5px;
     background-color:rgba(43, 84, 196, 0.445);
+    color:white;
+    font-family:'Oswald', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
 }
 
 ::placeholder{
@@ -813,6 +838,25 @@ input{
   font-family:'Oswald', sans-serif;
   font-size:25px;
   font-weight:bold;
+  text-align:center;
+}
+
+.submit-btn{
+    color:white;
+    background-color:rgb(43, 83, 196);
+    border:3px solid rgb(43, 83, 196);
+    border-radius:5px;
+    width:100%;
+    height:50px;
+    padding:5;
+    margin:20px 0;
+    font-family:'Black Han Sans', sans-serif;
+    font-size:25px;
+    text-align:center;
+}
+
+.submit-btn:hover{
+    color:#818181;
 }
 
 /*---------- Media Queries ----------*/
@@ -839,9 +883,19 @@ input{
     }
 }
 
+@media (max-width: 750px) {
+    .win-maps{
+    display:none;
+    }
+
+    .win-info{
+        display:none;
+    }
+}
+
 @media (max-width: 1200px) {
     .menu-icon{
-    font-size:6vw;
+    font-size:5vw;
     }
 
     .btn-block{
@@ -951,6 +1005,10 @@ input{
     .sm-view{
        display:inline-block;
     }
+
+    .menu-icon{
+        margin-right:30px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -963,12 +1021,22 @@ input{
     .menu-btn{
         font-size:25px;
     }
+
     .dropdown-item{
         font-size:25px;
     }
+
     .menu-container{
         display:flex;
         justify-content:center;
+    }
+
+    .win-row{
+        display:none;
+    }
+
+    .header{
+        margin-top:10px;
     }
 }
 
