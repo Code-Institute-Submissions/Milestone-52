@@ -14,8 +14,20 @@ function sendMail(contestEntry) {
             console.log("FAILED", error);
         });
         return false;
-        
 }
 
+function changeText() {
+  var x = document.getElementById("change");
+  if (x.innerHTML === "Enter To Win The Pass Of Your Choice!") {
+    x.innerHTML = "Good Luck!";
+  } else {
+    x.innerHTML = "Enter To Win The Pass Of Your Choice!";
+  }
+}
 
-  
+$(document).ready(function(){
+    $( "#submitBtn" ).click(function() {
+        $( "#contest" ).hide( "slow", function() {
+    });
+});
+}); 

@@ -63,12 +63,12 @@
     <section class="container form-container">
         <div class="row d-flex justify-content-center">
             <div class="col-12 mt-3">
-                <h2>Enter To Win The Pass Of Your Choice!</h2>
+                <h2 id="change">Enter To Win The Pass Of Your Choice!</h2>
                 <hr class="rounded">
             </div>
         </div>
         <form id="contest" onsubmit="return sendMail(this);" method="POST" autocomplete="off">
-            <div class="row"> 
+            <div id="contest-row" class="row"> 
                 <div class="col-lg-3">
                 <input class="input-field" type="text" placeholder="Full Name" id="fullname" name="name" required>
                 </div>
@@ -79,7 +79,7 @@
                 <input class="input-field" type="text" placeholder="Favorite Mountain" id="favoritemountain" name="favoritemountain" required>
                 </div>
                 <div class="col-3">
-                    <button class="submit-btn text-center" type="submit">Submit</button>
+                    <button id="submitBtn" onclick="changeText()" class="submit-btn text-center" type="submit">Submit</button>
                 </div>
             </div>
         </form>
