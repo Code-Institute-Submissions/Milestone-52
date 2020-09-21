@@ -12,6 +12,9 @@ function initMap() {
         streetViewControl: false,
         mapTypeControl: false
     });
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJx2-ymy6yQXQM7Qx6-9yYXON--z332Y&callback=initMap">
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
     function setMarkers(locations, markerArray, icon) {
         let location = locations.map(function(location, i) {
