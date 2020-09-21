@@ -16,6 +16,7 @@ function sendMail(contestEntry) {
         return false;
 }
 
+// Change text on form submission //
 function changeText() {
   var x = document.getElementById("change");
   if (x.innerHTML === "Enter To Win The Pass Of Your Choice!") {
@@ -25,6 +26,7 @@ function changeText() {
   }
 }
 
+// Hide form on submission //
 $(document).ready(function(){
     $( "#submitBtn" ).click(function() {
         $( "#contest" ).hide( "slow", function() {

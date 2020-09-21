@@ -58,7 +58,7 @@ Ski Village is a website that lets users compare the three major season passes f
 ##### *Homepage* 
 * All pages were designed for ease of use and avoid confusion. Landing pages on both desktop and mobile have a hamburger icon in the top right corner containing a dropdown menu for access to other pages and links to all social media accounts.
 
-<p align="center"><img src="/images/desktop.png" width="400"></p>
+<p align="center"><img src="/images/desktop2.png" width="400"></p>
 
 * Both mobile and desktop view also contain a link on the bottom informing users about the interactive map feature to help users explore the site quicker.
 
@@ -100,6 +100,19 @@ Ski Village is a website that lets users compare the three major season passes f
 
 <p align="center"><img src="/images/infopage.png" width="400"></p>
 
+##### *Enter To Win Page*
+* A link has been placed at the top of all other pages and in the dropdown menu to access the Enter To Win Page.
+
+* An entry form has been designed asking for basic information with the chance to win a season pass of their choice.
+
+* Using the EmailJS api, the entrants information will be sent into my inbox.
+
+* JavaScript and Jquery functions have been put in place to make the form hide and a "Good Luck!" message upon submission to ensure there aren't multiple entries.
+
+<p align="center"><img src="/images/contest.png" width="400"></p>
+
+<p align="center"><img src="/images/contestComplete.png" width="400"></p>
+
 ### Wireframes
 # LINK HERE
 
@@ -127,12 +140,14 @@ Ski Village is a website that lets users compare the three major season passes f
    * The Bootstrap JavaScript bundle was used multiple times throughout this site, primarily for Google Map interaction. 
 6. [Google Maps](https://developers.google.com/maps/documentation)
    * The Google Maps platform was used to access its API and codes for the maps page in this project.
-7. [Git:](https://git-scm.com/)
+7. [EmailJS](https://www.emailjs.com/) 
+   * The EmailJS API was used for the contest submission form.
+8. [Git:](https://git-scm.com/)
    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Github.
-8. [GitHub:](https://github.com/)  
+9. [GitHub:](https://github.com/)  
    * GitHub is used to store the projects code after being pushed from Git.
-9. [Balsamiq:](https://balsamiq.com/)
-   * Balsamiq was used to create the wireframes during the design process.        
+10. [Balsamiq:](https://balsamiq.com/)
+    * Balsamiq was used to create the wireframes during the design process.        
 ## **Testing**
    * The W3C Markup Validator, W3C CSS Validator Services and JS Hint were used to validate every page of the project to ensure there were no syntax errors in the project. 
 # LINK HERE
@@ -190,7 +205,7 @@ Ski Village is a website that lets users compare the three major season passes f
 
 ### Deployment
 The project was deployed to GitHub Pages using the following steps...
-1. Log in to GitHub and loacte the GitHub Repository.
+1. Log in to GitHub and locate the GitHub Repository.
 2. At the top of the repository, locate the "settings" button on the menu.
 3. Scroll down the settings page until you locate the "GitHub Pages" section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
