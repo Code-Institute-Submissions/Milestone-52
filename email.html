@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         (function(){
         emailjs.init("user_gbwopAIestVc7SOzXK2hr");
         })(); 
@@ -64,7 +64,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 mt-3">
                 <h2 id="change">Enter To Win The Pass Of Your Choice!</h2>
-                <hr class="rounded">
+                <hr class="rounded win-rounded">
             </div>
         </div>
         <form id="contest" onsubmit="return sendMail(this);" method="POST" autocomplete="off">

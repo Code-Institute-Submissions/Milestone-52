@@ -37,7 +37,8 @@ function initMap() {
     setMarkers(collectiveLocationsWithInfoContent, cmarkers, 'wht-circle.png');
 }
 
-// Toggle Mountain Lists and Button Color//
+// Toggle Mountain Lists Under Map On Large Screen //
+
 $(document).ready(function(){
   $("#epic-button").click(function(){
     $("#epic-container").toggle();
@@ -50,6 +51,8 @@ $(document).ready(function(){
   });
 });
 
+// Toggle Epic Button Color and Text Onclick //
+// Buttons on top of map //
 $(document).ready(function(){
   $(".epic-button").click(function() {
   $(this).toggleClass('epic-button-pressed');
@@ -60,7 +63,7 @@ $(document).ready(function(){
 		});
     });
     });
-
+// Links in map options menu on smaller screens //
 $(document).ready(function(){
   $(".epic-btn").click(function() {
   $(this).toggleClass('epic-pressed');
@@ -70,8 +73,10 @@ $(document).ready(function(){
 		   return v === 'Hide Epic Mountains' ? 'Show Epic Mountains' : 'Hide Epic Mountains';
 		});
     });
-    });    
+    });
 
+// Toggle Ikon Button Color and Text Onclick //
+// Buttons on top of map //
 $(document).ready(function(){
   $(".ikon-button").click(function() {
   $(this).toggleClass('ikon-button-pressed');
@@ -83,7 +88,7 @@ $(document).ready(function(){
     });  
     });
     
-    
+// Links in map options menu on smaller screens //   
 $(document).ready(function(){
   $(".ikon-btn").click(function() {
   $(this).toggleClass('ikon-pressed');
@@ -95,6 +100,8 @@ $(document).ready(function(){
     });  
     });
 
+// Toggle Collective Button Color and Text Onclick //
+// Buttons on top of map //
 $(document).ready(function(){
   $(".collective-button").click(function() {
   $(this).toggleClass('collective-button-pressed');
@@ -106,6 +113,7 @@ $(document).ready(function(){
     });
     });
 
+// Links in map options menu on smaller screens //
 $(document).ready(function(){
   $(".collective-btn").click(function() {
   $(this).toggleClass('collective-pressed');
@@ -117,8 +125,8 @@ $(document).ready(function(){
     });
     });    
 
-// Toggle Markers On and Off Map //    
-function toggleEpic() {
+// Toggle epic markers onto map on small screens //
+    function toggleEpic() {
     var e = document.getElementById("epic-btn");
     if (e.classList.contains('epic-pressed'))
     {
@@ -132,7 +140,7 @@ function toggleEpic() {
 		emarkers[i].setMap(show);
     }
 }
-
+// Toggle epic markers onto map on large screens //
 function toggleE() {
     var e = document.getElementById("epic-button");
     if (e.classList.contains('epic-button-pressed'))
@@ -147,7 +155,7 @@ function toggleE() {
 		emarkers[i].setMap(show);
     }
 }
-
+// Toggle collective markers onto map on small screens //
 function toggleCollective() {
     var c = document.getElementById("collective-btn");
     if (c.classList.contains('collective-pressed'))
@@ -162,7 +170,7 @@ function toggleCollective() {
 		cmarkers[i].setMap(show);
     }
 }
-
+// Toggle collective markers onto map on large screens //
 function toggleC() {
     var e = document.getElementById("collective-button");
     if (e.classList.contains('collective-button-pressed'))
@@ -177,7 +185,7 @@ function toggleC() {
 		cmarkers[i].setMap(show);
     }
 }
-
+// Toggle ikon markers onto map on small screens //
 function toggleIkon() {
     var k = document.getElementById("ikon-btn");
     if (k.classList.contains('ikon-pressed'))
@@ -192,7 +200,7 @@ function toggleIkon() {
 		imarkers[i].setMap(show);
     }
 }
-
+// Toggle epic markers onto map on large screens //
 function toggleI() {
     var e = document.getElementById("ikon-button");
     if (e.classList.contains('ikon-button-pressed'))
@@ -207,6 +215,3 @@ function toggleI() {
 		imarkers[i].setMap(show);
     }
 }
-
-
-  

@@ -1,5 +1,5 @@
-// Contest Entry Submition EmailJS //
 
+// Contest Entry Submition EmailJS //
 function sendMail(contestEntry) {
     emailjs.send("SkiVillage", "template_pvm79k8", {
        "from_name": contestEntry.name.value,
