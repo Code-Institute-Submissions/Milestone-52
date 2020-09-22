@@ -575,7 +575,7 @@ a:not([href]) {
 }
 
 /*---------- General Info Comparison ----------*/
-    body:before {
+    .info-header-background{
     content: "";
     display: block;
     position: fixed;
