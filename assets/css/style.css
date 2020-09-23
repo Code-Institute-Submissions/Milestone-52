@@ -805,6 +805,17 @@ button:focus {
     margin:0 2px 0 2px;
 }
 
+.info-footer{
+    background-color:;
+    border-bottom:none;
+    color:rgb(43, 83, 196);
+    background-color:white;
+}
+
+.info-footer p{
+    color:rgb(43, 83, 196);
+}
+
 /*---------- Enter to Win ----------*/
 .email-header-background {
     background: url("../images/skiers.jpg"); 
