@@ -3,8 +3,7 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x:hidden;
-    overflow-y:hidden; 
+    overflow-x:hidden; 
 }
 
 .background {
@@ -200,7 +199,6 @@ a:not([href]) {
     background-color:white;
     border-bottom:none;
     color:rgb(43, 83, 196);
-    overflow-y:hidden;
 }
 
 .social-icon{
