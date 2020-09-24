@@ -577,16 +577,19 @@ a:not([href]) {
 }
 
 /*---------- General Info Comparison ----------*/
-    .info-header-background{
+.info-header-background{
     background:linear-gradient(rgb(124, 185, 255), white,rgb(124, 185, 255));; 
     background-position:center;
-    background-repeat:;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height:100vh;
     max-width:100vw;
+}
+
+.info-header{
+    height:80px;
 }
 
 .info-home-btn{
@@ -612,6 +615,15 @@ a:not([href]) {
     margin-top:5px;
     margin-bottom:50px;
     background:rgba(43, 84, 196, 0.466);
+}
+
+.link-row{
+    font-family:'Oswald', sans-serif;
+    font-size:25px;
+}
+
+.link-row:hover{
+    color:rgb(43, 83, 196);
 }
 
 .info-container{
@@ -950,6 +962,10 @@ button:focus{
     .btn-block{
         font-size:4vw;
     }
+
+    .link-row{
+        display:none !important;
+    }
 }
 
 @media (min-width: 991px) {
@@ -1053,11 +1069,6 @@ button:focus{
 
     .map-link-row{
         justify-content:center;
-    }
-
-    .info-header-background{
-    background:none;
-    background-image: linear-gradient(rgb(124, 185, 255), white,rgb(124, 185, 255));
     }
 }
 

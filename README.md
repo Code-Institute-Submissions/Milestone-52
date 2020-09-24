@@ -120,16 +120,20 @@ Ski Village is a website that lets users compare the three major season passes f
 ##### *Pass Info Page*
 * The pass info page has all information organized neatly in three columns, one for each pass.
 
+* A link that leads to directly to each section has been placed at the top of the page for the users convenience.
+<p align="center"><img src="/assets/images/sectionlinks.png" width="400"></p>
+
 * A scroll to top button has been installed at the bottom to make the page more user friendly.
 
 * All mountain names throughout this page and site are workable links that lead to that resorts webpage.
 
 * A "Click To Buy" button that leads to each of the passes websites has been conveniently placed at the bottom of the info page for users that are ready to purchase.
 
-<p align="center"><img src="/assets/images/infopage.png" width="400"></p>
+<p align="center"><img src="/assets/images/buynow.png" width="400"></p>
 
 ##### *Enter To Win Page*
 * A link has been placed at the top of all other pages and in the dropdown menu to access the Enter To Win Page.
+<p align="center"><img src="/assets/images/winlink.png" width="400"></p>
 
 * An entry form has been designed asking for basic information with the chance to win a season pass of their choice.
 
@@ -248,12 +252,6 @@ Ski Village is a website that lets users compare the three major season passes f
 * The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone 8, iPhone X, and Samsung devices.
 * All the links on every page were tested on all browsers to ensure they are working properly.
 * Friends and family members were recruited to play on the site and inform me of any changes they felt needed to be made.
-
-### Known Bugs
-
-* On some iOS devices "over-scrolling" occurs. When the bottom of the page is reached and the user continues pulling the screen to scroll down it will eventually go past the footer into white space.
-<p align="center"><img src="/assets/images/iphonebug.jpg" width="200" height="400"></p>
-<p align="center"><img src="/assets/images/ipadbug.png" width="300" height="400"></p>
 
 ***
 

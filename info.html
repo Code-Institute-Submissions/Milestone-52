@@ -16,10 +16,15 @@
         <div id="topofthePage"></div>
 <!-- Menu -->
         <div class="row info-header">
-            <div class="col-6 mt-2">
+            <div class="col-4 mt-2">
                 <a href="index.html" class="info-home-btn bg-transparent pl-3">Ski Village</a>
             </div>
-            <div class="col-6">
+            <div class="col-4 mt-3 p-0">
+                <a class="win win-maps" href="email.html">
+                <h4 class="d-flex justify-content-center">Click Here To Win!</h4>
+                </a>
+            </div>
+            <div class="col-4">
                 <div class="d-flex justify-content-end align-items-start">
                     <div class="btn-group dropleft">
                         <button class="btn shadow-none menu-btn bg-transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars info-burger-icon" aria-hidden="true"></i>
@@ -54,8 +59,19 @@
                 </div>    
             </div>
         </div>
+        <div id="link-row" class="row link-row d-flex justify-content-around text-center ml-0 mr-0 mb-4 mt-5">
+            <div class="col"><a id="price-link" title="Go to prices">Prices</a></div>
+            <div class="col"><a id="resort-link"  title="Go to resorts">Resorts</a></div>
+            <div class="col"><a id="rockies-link" title="Go to rockies">Rockies</a></div>
+            <div class="col"><a id="east-link" title="Go to east">East Coast</a></div>
+            <div class="col"><a id="west-link" title="Go to west">West Coast</a></div>
+            <div class="col"><a id="midwest-link" title="Go to midwest">MidWest</a></div>
+            <div class="col"><a id="canada-link" title="Go to canada">Canada</a></div>
+            <div class="col"><a id="international-link" title="Go to international">International</a></div>
+            <div class="col"><a id="buy-now" title="Go to buy">Buy Now!</a></div>
+        </div>    
+<!-- Restrictions --> 
         <section class="container-fluid info-container">
-<!-- Restrictions -->    
             <div class="blue-columns mb-3">
                 <div class="row">
                     <div class="col-12 text-center align-items-center">
@@ -145,7 +161,7 @@
             </div>
 <!-- Prices -->
             <div class="mb-3">  
-                <div class="row">
+                <div id="price" class="row">
                     <div class="col-lg-4 text-center">
                     <div class="price-row-section mb-3">
                             <h2>Epic</h2>
@@ -168,7 +184,7 @@
             </div>
 <!-- Resorts -->
             <div class="white-columns mb-3">
-                <div class="row">
+                <div id="resorts" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>RESORTS</h1>
                     </div>
@@ -196,7 +212,7 @@
             </div>
 <!-- Rockies -->
             <div class="blue-columns mb-3">
-                <div class="row">
+                <div id="rockies" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>ROCKIES</h1>
                     </div>
@@ -250,7 +266,7 @@
             </div>
 <!-- East -->
             <div class="pink-columns mb-3">
-                <div class="row">
+                <div id="east" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>EAST</h1>
                     </div>
@@ -301,7 +317,7 @@
             </div>
 <!-- West -->
             <div class="white-columns mb-3">
-                <div class="row">
+                <div id="west" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>WEST</h1>
                     </div>
@@ -346,7 +362,7 @@
             </div>
 <!-- MidWest -->
             <div class="blue-columns mb-3">
-                <div class="row">
+                <div id="midwest" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>MIDWEST</h1>
                     </div>
@@ -388,7 +404,7 @@
             </div>
 <!-- Canada -->
             <div class="pink-columns mb-3">
-                <div class="row">
+                <div id="canada" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>CANADA</h1>
                     </div>
@@ -428,7 +444,7 @@
             </div>
 <!-- International -->
             <div class="white-columns mb-3">
-                <div class="row">
+                <div id="international" class="row">
                     <div class="col-12 text-center align-items-center">
                         <h1>INTERNATIONAL</h1>
                     </div>
@@ -483,7 +499,7 @@
             </div>
 <!-- Buy Now --> 
             <div class="mb-3">
-                <div class="row">
+                <div id="buynow" class="row">
                     <div class="col-lg-4 text-center mb-3">
                         <div class="buy-now-section buy-now">
                             <a target="_blank" href="https://www.epicpass.com/Passes/Epic-Pass.aspx">Buy<br>Epic</a>
@@ -548,5 +564,5 @@
         </div>                  
 </body>
 <!-- Scroll to top function -->
-<script src="./assets/js/sendEmail.js"></script>
+<script src="./assets/js/info.js"></script>
 </html>

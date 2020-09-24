@@ -34,9 +34,3 @@ $(document).ready(function(){
 });
 }); 
 
-// Scroll to top function on info.html //
-    $('.topBtn').click(function(){
-    $('html, body').animate({
-        scrollTop: $('#topofthePage').offset().top
-    }, 1500);
-});
