@@ -733,6 +733,19 @@ ul{
     font-size:75px;
 }
 
+.price-row-section{
+    border:10px solid rgb(255, 104, 98);
+    border-radius:25px;
+    background-color:rgba(255, 103, 98, 0.452);
+    padding:10px 30px 10px 30px;
+}
+
+.price-row-section h2{
+    font-size:30px;
+    color:white;
+    border-bottom:2px solid white;
+}
+
 .resorts{
     color:rgb(43, 83, 196);
     font-size:75px;
@@ -740,7 +753,7 @@ ul{
 
 #topBtn{
     color:white;
-    background:rgba(43, 84, 196, 0.418);
+    background:rgba(43, 84, 196, 0.5);
     font-size:50px;
     border:10px solid rgb(43, 83, 196);
     border-radius:25px;
@@ -761,10 +774,18 @@ button:focus {
     font-size:40px;
     text-decoration:none;
     font-weight:bold;
+    font-family:'Black Han Sans', sans-serif;
 }
 
 .buy-now a:hover{
-    color:#818181;
+    color:rgb(43, 83, 196);
+}
+
+.buy-now-section{
+   border:10px solid rgb(43, 83, 196);
+   border-radius:25px;
+   background-color:rgba(43, 84, 196, 0.5);
+   padding:10px 30px 10px 30px;
 }
 
 .info-map-link{
