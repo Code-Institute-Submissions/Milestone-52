@@ -17,7 +17,6 @@ Ski Village is a website that lets users compare the three major season passes f
   * [**Introduction**](#--introduction--)
   * [**User Experience (UX)**](#--user-experience--ux---)
     + [User Stories](#user-stories)
-        
     + [Target Audience](#target-audience)
     + [User Goals](#user-goals)
     + [Design](#design)
@@ -253,6 +252,8 @@ Ski Village is a website that lets users compare the three major season passes f
 ### Known Bugs
 
 * On some iOS devices "over-scrolling" occurs. When the bottom of the page is reached and the user continues pulling the screen to scroll down it will eventually go past the footer into white space.
+<p align="center"><img src="/assets/images/iphonebug.jpg" width="200" height="400"></p>
+<p align="center"><img src="/assets/images/ipadbug.png" width="300" height="400"></p>
 
 ***
 
