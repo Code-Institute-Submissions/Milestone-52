@@ -3,7 +3,6 @@ html {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x:hidden; 
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     min-height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x:hidden; 
 }
 
 .background {
@@ -580,9 +578,9 @@ a:not([href]) {
 
 /*---------- General Info Comparison ----------*/
     .info-header-background{
-    background: url("../images/mountain2.jpg"); 
+    background:linear-gradient(rgb(124, 185, 255), white,rgb(124, 185, 255));; 
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
