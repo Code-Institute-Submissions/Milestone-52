@@ -744,14 +744,15 @@ ul{
     color:white;
     background:rgba(43, 84, 196, 0.418);
     font-size:50px;
-    border:5px solid rgb(43, 83, 196);
-    border-radius:15px;
+    border:10px solid rgb(43, 83, 196);
+    border-radius:25px;
     text-decoration:none;
     padding:0 15px 0 15px;
+    width:50%;
 }
 
 #topBtn:hover {
-    color:#818181;
+    color:rgb(229, 233, 3);
 }
 
 button:focus {
@@ -771,8 +772,8 @@ button:focus {
 
 .info-map-link{
     color:white;
-    font-size:30px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-size:50px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .info-map-row{
@@ -783,18 +784,18 @@ button:focus {
 }
 
 .info-map-link:hover{
-    color:#818181;
+    color:rgb(255, 104, 98);
     text-decoration:none;
 }
 
 .info-win-link{
     color:rgb(43, 83, 196);
-    font-size:30px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-size:50px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .info-win-link:hover{
-    color:#818181;
+    color:white;
     text-decoration:none;
 }
 
@@ -950,6 +951,7 @@ button:focus{
 
     .social-icon{
         margin-bottom:30px;
+        padding-right:10px;
     }
 
     .map-social-icon{
